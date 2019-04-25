@@ -11,6 +11,6 @@ namespace SneakersApp.Data.Models
         public DateTime Created { get; set; }
         public string Url { get; set; }
         public IEnumerable<string> Tags { get; set; }
-        `public string Status { get; set; }
+        public string Status { get; set; }
     }
 }

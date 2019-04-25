@@ -1,4 +1,6 @@
 ﻿using System;
+using Microsoft;
+using SneakersApp.Data.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace SneakersApp.Data
@@ -10,6 +12,6 @@ namespace SneakersApp.Data
            
        }
 
-       public DbSet<Collection> Collections { get; set; }
+       public DbSet<Shoes> Shoes { get; set; }
     }
 }
