@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj": {}
+    "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj": {}
   },
   "projects": {
-    "C:\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
+    "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj",
         "projectName": "SneakersApp.Data",
-        "projectPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj",
-        "packagesPath": "C:\\Users\\Valen\\.nuget\\packages\\",
-        "outputPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp.Data\\obj\\",
+        "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj",
+        "packagesPath": "C:\\Users\\Jawed\\.nuget\\packages\\",
+        "outputPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jawed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -66,20 +66,20 @@
         }
       }
     },
-    "C:\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj": {
+    "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
         "projectName": "SneakersApp",
-        "projectPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
-        "packagesPath": "C:\\Users\\Valen\\.nuget\\packages\\",
-        "outputPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp\\obj\\",
+        "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
+        "packagesPath": "C:\\Users\\Jawed\\.nuget\\packages\\",
+        "outputPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jawed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -92,8 +92,8 @@
         "frameworks": {
           "netcoreapp2.2": {
             "projectReferences": {
-              "C:\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
-                "projectPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj"
+              "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
+                "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj"
               }
             }
           }
