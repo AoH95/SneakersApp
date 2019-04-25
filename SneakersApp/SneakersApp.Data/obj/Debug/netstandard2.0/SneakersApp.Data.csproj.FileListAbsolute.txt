@@ -1,0 +1,6 @@
+C:\DotNet\SneakersApp\SneakersApp.Data\bin\Debug\netstandard2.0\SneakersApp.Data.deps.json
+C:\DotNet\SneakersApp\SneakersApp.Data\bin\Debug\netstandard2.0\SneakersApp.Data.dll
+C:\DotNet\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.csprojAssemblyReference.cache
+C:\DotNet\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.csproj.CoreCompileInputs.cache
+C:\DotNet\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.AssemblyInfoInputs.cache
+C:\DotNet\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.AssemblyInfo.cs
