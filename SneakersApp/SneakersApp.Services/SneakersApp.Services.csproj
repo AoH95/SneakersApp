@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SneakersApp.Data\SneakersApp.Data.csproj" />
-    <ProjectReference Include="..\SneakersApp\SneakersApp.csproj" />
   </ItemGroup>
 
 </Project>

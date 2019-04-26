@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.2",
-    "signature": "407d21e704cb71deb3bb3b7abdba3139c1932bac"
+    "signature": "ce413b18924c8504fb865a0b4614994b6be71d66"
   },
   "compilationOptions": {
     "defines": [
@@ -30,7 +30,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "2.2.4",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
-          "SneakersApp.Data": "1.0.0"
+          "SneakersApp.Data": "1.0.0",
+          "SneakersApp.Services": "1.0.0"
         },
         "runtime": {
           "SneakersApp.dll": {}
@@ -477,16 +478,43 @@
           "System.Runtime": "4.3.0"
         }
       },
+      "WindowsAzure.Storage/9.3.3": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {
+            "assemblyVersion": "9.3.2.0",
+            "fileVersion": "9.3.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
+        }
+      },
       "SneakersApp.Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "2.2.4",
-          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.4"
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.4",
+          "WindowsAzure.Storage": "9.3.3"
         },
         "runtime": {
           "SneakersApp.Data.dll": {}
         },
         "compile": {
           "SneakersApp.Data.dll": {}
+        }
+      },
+      "SneakersApp.Services/1.0.0": {
+        "dependencies": {
+          "SneakersApp.Data": "1.0.0"
+        },
+        "runtime": {
+          "SneakersApp.Services.dll": {}
+        },
+        "compile": {
+          "SneakersApp.Services.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3791,7 +3819,19 @@
       "path": "system.linq.queryable/4.0.1",
       "hashPath": "system.linq.queryable.4.0.1.nupkg.sha512"
     },
+    "WindowsAzure.Storage/9.3.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VUV8j6dzkU/7vDgk5k+ob5g7nnch2fNByr0p9aOxMGFGk+tAnTehrZ4qnClF04CVozP1GNN2zrnbsxCmr+iZBg==",
+      "path": "windowsazure.storage/9.3.3",
+      "hashPath": "windowsazure.storage.9.3.3.nupkg.sha512"
+    },
     "SneakersApp.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "SneakersApp.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

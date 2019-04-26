@@ -125,3 +125,7 @@ C:/SneakersApp/SneakersApp/SneakersApp/bin/Debug/netcoreapp2.2/SneakersApp.Data.
 \\Mac\Home\Documents\DOTNET\sneaks\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.csproj.CopyComplete
 \\Mac\Home\Documents\DOTNET\sneaks\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.csprojAssemblyReference.cache
 \\Mac\Home\Documents\DOTNET\sneaks\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Collection\Index.g.cshtml.cs
+\\Mac\Home\Documents\DOTNET\sneaks\SneakersApp\SneakersApp\SneakersApp\bin\Debug\netcoreapp2.2\SneakersApp.Services.dll
+\\Mac\Home\Documents\DOTNET\sneaks\SneakersApp\SneakersApp\SneakersApp\bin\Debug\netcoreapp2.2\SneakersApp.Services.pdb
+\\Mac\Home\Documents\DOTNET\sneaks\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Collection\Detail.g.cshtml.cs
+\\Mac\Home\Documents\DOTNET\sneaks\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shoe\Upload.g.cshtml.cs

@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <UserSecretsId>68a218cb-c437-4ba5-af88-c0de782aba90</UserSecretsId>
   </PropertyGroup>
 
 
@@ -17,9 +18,13 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.3" />
   </ItemGroup>
 
-
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.0" />
+  </ItemGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\SneakersApp.Data\SneakersApp.Data.csproj" />
+    <ProjectReference Include="..\SneakersApp.Services\SneakersApp.Services.csproj" />
   </ItemGroup>
 
 </Project>

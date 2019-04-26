@@ -18,7 +18,7 @@ namespace SneakersApp.Controllers
             _shoesService = shoesService;
         }
 
-        public IActionResult Index()
+        public IActionResult Index() 
         {
             // Mock datas
             /* var shoesImageTags = new List<Tag>();
@@ -71,5 +71,20 @@ namespace SneakersApp.Controllers
             };
             return View(model);
         }
+        public IActionResult Detail(int id)
+        {
+            var shoes = _shoesService.GetById(id);
+
+            var model = new ShoesDetailModel()
+            {
+                Id = shoes.Id,
+                Title = shoes.Title,
+                Created = shoes.Created,
+                Url = shoes.Url,
+                Tags = shoes.Tags.Select(t => t.Description).ToList()
+            };
+
+            return View(model);
+        }
     }
-}
+}   

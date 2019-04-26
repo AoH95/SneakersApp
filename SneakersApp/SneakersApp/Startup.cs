@@ -12,14 +12,31 @@ using Microsoft.Extensions.DependencyInjection;
 using SneakersApp.Data;
 using Microsoft.EntityFrameworkCore;
 using SneakersApp.Services;
+using System.Data.SqlClient;
 
 namespace SneakersApp
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+
+        private string _connection = null;
+
+        public Startup(IHostingEnvironment env)
         {
-            Configuration = configuration;
+
+            var builder = new ConfigurationBuilder()
+            .SetBasePath(env.ContentRootPath)
+            .AddJsonFile("appsettings.json",
+                         optional: false,
+                         reloadOnChange: true)
+            .AddEnvironmentVariables();
+
+                if (env.IsDevelopment())
+                {
+                    builder.AddUserSecrets<Startup>();
+                }
+
+                Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -27,8 +44,15 @@ namespace SneakersApp
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            var builder = new SqlConnectionStringBuilder(
+            Configuration.GetConnectionString("DefaultConnection"));
+            builder.Password = Configuration["DbPassword"];
+            builder.UserID = Configuration["DbUser"];
+            builder.DataSource = Configuration["DbServer"];
+            _connection = builder.ConnectionString;
+
             services.AddDbContext<SneakersAppDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))
+                options.UseSqlServer(_connection)
             );
 
             services.Configure<CookiePolicyOptions>(options =>
