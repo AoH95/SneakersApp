@@ -11,6 +11,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SneakersApp.Data;
 using Microsoft.EntityFrameworkCore;
+using SneakersApp.Services;
 
 namespace SneakersApp
 {
@@ -37,6 +38,7 @@ namespace SneakersApp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddScoped<IImage, ShoesService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

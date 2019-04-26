@@ -4734,6 +4734,19 @@
         "runtime": {
           "bin/placeholder/SneakersApp.Data.dll": {}
         }
+      },
+      "SneakersApp.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "SneakersApp.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SneakersApp.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SneakersApp.Services.dll": {}
+        }
       }
     }
   },
@@ -12941,6 +12954,11 @@
       "type": "project",
       "path": "../SneakersApp.Data/SneakersApp.Data.csproj",
       "msbuildProject": "../SneakersApp.Data/SneakersApp.Data.csproj"
+    },
+    "SneakersApp.Services/1.0.0": {
+      "type": "project",
+      "path": "../SneakersApp.Services/SneakersApp.Services.csproj",
+      "msbuildProject": "../SneakersApp.Services/SneakersApp.Services.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12951,7 +12969,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.4",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
-      "SneakersApp.Data >= 1.0.0"
+      "SneakersApp.Data >= 1.0.0",
+      "SneakersApp.Services >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12986,6 +13005,9 @@
           "projectReferences": {
             "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
               "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj"
+            },
+            "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj"
             }
           }
         }

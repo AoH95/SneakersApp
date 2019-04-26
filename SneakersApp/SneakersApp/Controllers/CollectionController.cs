@@ -5,15 +5,23 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SneakersApp.Models;
 using SneakersApp.Data.Models;
+using SneakersApp.Data;
 
 namespace SneakersApp.Controllers
 {
     public class CollectionController : Controller
     {
+        private readonly IImage _shoesService;
+
+        public CollectionController(IImage shoesService)
+        {
+            _shoesService = shoesService;
+        }
+
         public IActionResult Index()
         {
-
-            var shoesImageTags = new List<Tag>();
+            // Mock datas
+            /* var shoesImageTags = new List<Tag>();
 
             var tag1 = new Tag()
             {
@@ -52,7 +60,9 @@ namespace SneakersApp.Controllers
                     Created = DateTime.Now,
                     Tags = shoesImageTags
                 }
-            };
+            }; */
+
+            var shoesList = _shoesService.GetAll();
 
             var model = new CollectionIndexModel()
             {
