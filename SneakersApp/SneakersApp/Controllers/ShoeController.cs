@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using SneakersApp.Models;
 using SneakersApp.Services;
 using SneakersApp.Data;
+using SneakersApp.Data.Models;
 
 namespace SneakersApp.Controllers
 {
@@ -41,8 +42,32 @@ namespace SneakersApp.Controllers
             var blockBlob = container.GetBlockBlobReference(fileName);
 
             await blockBlob.UploadFromStreamAsync(file.OpenReadStream());
-            await _shoesService.SetShoe(title, tags, blockBlob.Uri);
+            await _shoesService.createShoe(title, tags, blockBlob.Uri);
 
+            return RedirectToAction("Index", "Collection");
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var shoe = _shoesService.GetById(id);
+
+            if (shoe == null)
+            {
+                return NotFound();
+            }
+            _shoesService.Delete(shoe);
+            return RedirectToAction("Index", "Collection");
+        }
+
+        [HttpPut("{id}")]
+        public IActionResult UpdateShoe(int id, Shoes shoe)
+        {
+            if (id != shoe.Id)
+            {
+                return BadRequest();
+            }
+            _shoesService.PutShoe(id, shoe);
             return RedirectToAction("Index", "Collection");
         }
     }

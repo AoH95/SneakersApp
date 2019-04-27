@@ -32,6 +32,34 @@ namespace SneakersApp.Services
             return GetAll().Where(img => img.Tags.Any(t => t.Description == tag));
         }
 
+        public async Task Delete(Shoes shoe)
+        {
+            _ctx.Remove(shoe);
+            await _ctx.SaveChangesAsync();
+        }
+
+        public async Task PutShoe(int id, Shoes shoe)
+        {
+            _ctx.Entry(shoe).State = EntityState.Modified;
+            try
+            {
+                await _ctx.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!ShoeExists(id))
+                {
+                    return;
+                }
+                else
+                {
+                    throw;
+                }
+            }
+            return;
+
+        }
+
         public CloudBlobContainer GetBlobContainer(string azureConnectionString, string containerName)
         {
             var storageAccount = CloudStorageAccount.Parse(azureConnectionString);
@@ -39,7 +67,7 @@ namespace SneakersApp.Services
             return blobClient.GetContainerReference(containerName);
         }
 
-        public async Task SetShoe(string title, string tags, Uri uri)
+        public async Task createShoe(string title, string tags, Uri uri)
         {
             var shoe = new Shoes
             {
@@ -60,5 +88,11 @@ namespace SneakersApp.Services
                 Description = tag
             }).ToList();
         }
+
+        private bool ShoeExists(int id)
+        {
+            return _ctx.Shoes.Any(e => e.Id == id);
+        }
+
     }
 }
