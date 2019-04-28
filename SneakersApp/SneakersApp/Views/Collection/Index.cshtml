@@ -2,20 +2,10 @@
 
 <div class="container body-content">
     <div class="shoes-content">
-        @foreach(var shoes in Model.Shoes)
+        @foreach(var collection in Model.Collection)
         {
-            <a asp-controller="Collection" asp-action="Detail" asp-route-id="@shoes.Id">
-                <div class="shoes-image" style="background-image:url(@shoes.Url)"></div>
-                <span>@shoes.Title</span>
-                <span>@shoes.Id</span>
-                <ul>
-                    @foreach (var tag in shoes.Tags)
-                    {
-                    <li>
-                        @tag.Description
-                    </li>
-                    }
-                </ul>
+            <a asp-controller="Collection" asp-action="Detail" asp-route-id="@collection.Id">
+                ok
             </a>
         }
     </div>

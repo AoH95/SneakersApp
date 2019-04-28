@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {}
+    "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {}
   },
   "projects": {
-    "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
+    "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj",
+        "projectUniqueName": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj",
         "projectName": "SneakersApp.Data",
-        "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj",
+        "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj",
         "packagesPath": "C:\\Users\\Jawed\\.nuget\\packages\\",
-        "outputPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\obj\\",
+        "outputPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -62,7 +62,8 @@ namespace SneakersApp
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddScoped<IImage, ShoesService>();
+            services.AddScoped<ICollection, CollectionsService>();
+            services.AddScoped<IShoe, ShoesService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

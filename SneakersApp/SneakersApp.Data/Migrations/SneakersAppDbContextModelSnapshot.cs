@@ -19,7 +19,7 @@ namespace SneakersApp.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("SneakersApp.Data.Models.Shoes", b =>
+            modelBuilder.Entity("SneakersApp.Data.Models.Collection", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -27,13 +27,32 @@ namespace SneakersApp.Data.Migrations
 
                     b.Property<DateTime>("Created");
 
-                    b.Property<string>("Status");
+                    b.Property<string>("Description");
+
+                    b.Property<string>("Title");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Collections");
+                });
+
+            modelBuilder.Entity("SneakersApp.Data.Models.Shoes", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int?>("CollectionID");
+
+                    b.Property<DateTime>("Created");
 
                     b.Property<string>("Title");
 
                     b.Property<string>("Url");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("CollectionID");
 
                     b.ToTable("Shoes");
                 });
@@ -53,6 +72,13 @@ namespace SneakersApp.Data.Migrations
                     b.HasIndex("ShoesId");
 
                     b.ToTable("Tags");
+                });
+
+            modelBuilder.Entity("SneakersApp.Data.Models.Shoes", b =>
+                {
+                    b.HasOne("SneakersApp.Data.Models.Collection", "Collection")
+                        .WithMany()
+                        .HasForeignKey("CollectionID");
                 });
 
             modelBuilder.Entity("SneakersApp.Data.Models.Tag", b =>

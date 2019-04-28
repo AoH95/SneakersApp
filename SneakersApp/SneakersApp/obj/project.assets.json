@@ -13018,11 +13018,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
+      "projectUniqueName": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
       "projectName": "SneakersApp",
-      "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
+      "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
       "packagesPath": "C:\\Users\\Jawed\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp\\obj\\",
+      "outputPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13041,11 +13041,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj"
+            "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj"
             },
-            "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\sneaks\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj"
+            "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj": {
+              "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj"
             }
           }
         }

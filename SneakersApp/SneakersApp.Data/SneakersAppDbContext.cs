@@ -14,5 +14,6 @@ namespace SneakersApp.Data
 
        public DbSet<Shoes> Shoes { get; set; }
        public DbSet<Tag> Tags { get; set; }
+       public DbSet<Collection> Collections { get; set; }
     }
 }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SneakersApp.Services
 {
-    public class ShoesService : IImage
+    public class ShoesService : IShoe
     {
         private readonly SneakersAppDbContext _ctx;
         public ShoesService(SneakersAppDbContext ctx)
@@ -32,7 +32,7 @@ namespace SneakersApp.Services
             return GetAll().Where(img => img.Tags.Any(t => t.Description == tag));
         }
 
-        public async Task Delete(Shoes shoe)
+        public async Task DeleteShoe(Shoes shoe)
         {
             _ctx.Remove(shoe);
             await _ctx.SaveChangesAsync();

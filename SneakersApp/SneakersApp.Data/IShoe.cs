@@ -6,7 +6,7 @@ using SneakersApp.Data.Models;
 
 namespace SneakersApp.Data
 {
-    public interface IImage
+    public interface IShoe
     {
         IEnumerable<Shoes> GetAll();
         IEnumerable<Shoes> GetWithTag(string tag);
@@ -14,7 +14,7 @@ namespace SneakersApp.Data
         CloudBlobContainer GetBlobContainer(string connectionString, string containerName);
         Task createShoe(string title, string tags, Uri uri);
         List<Tag> ParseTags(string tags);
-        Task Delete(Shoes shoe);
+        Task DeleteShoe(Shoes shoe);
         Task PutShoe(int id, Shoes shoe);
     }
 }

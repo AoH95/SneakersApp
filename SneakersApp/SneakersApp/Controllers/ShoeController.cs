@@ -15,20 +15,106 @@ namespace SneakersApp.Controllers
 {
     public class ShoeController : Controller
     {
+        private readonly IShoe _shoesService;
         private IConfiguration _config;
-        private IImage _shoesService;
         private string AzureConnectionString { get; }
 
-        public ShoeController(IConfiguration config, IImage shoesservice)
+        public ShoeController(IShoe shoesService, IConfiguration config)
         {
+            _shoesService = shoesService;
             _config = config;
-            _shoesService = shoesservice;
             AzureConnectionString = _config["AzureStorageConnectionString"];
         }
 
-        public IActionResult Upload()
+        public IActionResult Index() 
+        {
+            // Mock datas
+            /* var shoesImageTags = new List<Tag>();
+
+            var tag1 = new Tag()
+            {
+                Description = "Les vrais bails",
+                Id = 0
+            };
+
+            var tag2 = new Tag()
+            {
+                Description = "Les bons bails",
+                Id = 1
+            };
+
+            shoesImageTags.AddRange(new List<Tag>{ tag1, tag2});
+
+            var shoesList = new List<Shoes>()
+            {
+                new Shoes()
+                {
+                    Title = "Nike SB",
+                    Url = "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                    Created = DateTime.Now,
+                    Tags = shoesImageTags
+                },
+                new Shoes()
+                {
+                    Title = "Nike SB 2",
+                    Url = "https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                    Created = DateTime.Now,
+                    Tags = shoesImageTags
+                },
+                new Shoes()
+                {
+                    Title = "Nike SB 3",
+                    Url = "https://images.pexels.com/photos/2065695/pexels-photo-2065695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+                    Created = DateTime.Now,
+                    Tags = shoesImageTags
+                }
+            }; */
+
+            var shoesList = _shoesService.GetAll();
+
+            var model = new ShoeIndexModel()
+            {
+                Shoes = shoesList,
+                SearchQuery = ""
+            };
+            return View(model);
+        }
+        public IActionResult Detail(int id)
+        {
+            var shoes = _shoesService.GetById(id);
+
+            var model = new ShoesDetailModel()
+            {
+                Id = shoes.Id,
+                Title = shoes.Title,
+                Created = shoes.Created,
+                Url = shoes.Url,
+                Tags = shoes.Tags.Select(t => t.Description).ToList()
+            };
+
+            return View(model);
+        }
+
+        public IActionResult Create()
         {
             var model = new UploadShoeModel();
+            return View(model);
+        }
+
+        public IActionResult Update(int id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+            var shoe = _shoesService.GetById(id);
+            if(shoe == null)
+            {
+                return NotFound();
+            }
+            var model = new UploadShoeModel() {
+                   Id = shoe.Id
+            };
             return View(model);
         }
 
@@ -44,11 +130,10 @@ namespace SneakersApp.Controllers
             await blockBlob.UploadFromStreamAsync(file.OpenReadStream());
             await _shoesService.createShoe(title, tags, blockBlob.Uri);
 
-            return RedirectToAction("Index", "Collection");
+            return RedirectToAction("Index", "Shoe");
         }
 
-        [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var shoe = _shoesService.GetById(id);
 
@@ -56,19 +141,18 @@ namespace SneakersApp.Controllers
             {
                 return NotFound();
             }
-            _shoesService.Delete(shoe);
-            return RedirectToAction("Index", "Collection");
+            await _shoesService.DeleteShoe(shoe);
+            return RedirectToAction("Index", "Shoe");
         }
 
-        [HttpPut("{id}")]
-        public IActionResult UpdateShoe(int id, Shoes shoe)
+        public async Task<IActionResult> UpdateShoe(int id, Shoes shoe)
         {
             if (id != shoe.Id)
             {
                 return BadRequest();
             }
-            _shoesService.PutShoe(id, shoe);
-            return RedirectToAction("Index", "Collection");
+            await _shoesService.PutShoe(id, shoe);
+            return RedirectToAction("Index", "Shoe");
         }
     }
-}
+}   

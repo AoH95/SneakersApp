@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace SneakersApp.Data.Models
 {
@@ -10,5 +11,7 @@ namespace SneakersApp.Data.Models
         public DateTime Created { get; set; }
         public string Url { get; set; }
         public virtual IEnumerable<Tag> Tags { get; set; }
+        [ForeignKey("CollectionID")]
+        public Collection Collection { get; set; }
     }
 }
