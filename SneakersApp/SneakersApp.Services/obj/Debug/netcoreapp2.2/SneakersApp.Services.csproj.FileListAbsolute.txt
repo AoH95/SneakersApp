@@ -34,3 +34,15 @@
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.csproj.CopyComplete
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.dll
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.pdb
+C:\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.csprojAssemblyReference.cache
+C:\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.csproj.CoreCompileInputs.cache
+C:\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.AssemblyInfoInputs.cache
+C:\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.AssemblyInfo.cs
+C:\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.dll
+C:\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.pdb
+C:\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Services.deps.json
+C:\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Services.dll
+C:\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Services.pdb
+C:\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Data.dll
+C:\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Data.pdb
+C:\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.csproj.CopyComplete

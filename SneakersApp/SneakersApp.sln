@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakersApp", "SneakersApp\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakersApp.Data", "SneakersApp.Data\SneakersApp.Data.csproj", "{CE5C0D3B-1AA0-4D62-9568-EE7793FA27AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakersApp.Services", "SneakersApp.Services\SneakersApp.Services.csproj", "{4DA41C0C-4518-410F-A444-BB7AC6487763}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakersApp.Services", "SneakersApp.Services\SneakersApp.Services.csproj", "{4DA41C0C-4518-410F-A444-BB7AC6487763}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -4738,6 +4738,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "Microsoft.AspNetCore.Identity": "2.2.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.2.0",
           "Microsoft.EntityFrameworkCore": "2.2.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.4",
           "WindowsAzure.Storage": "9.3.3"
@@ -13002,6 +13004,9 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.AspNetCore.App >= 2.2.0",
+      "Microsoft.AspNetCore.Identity >= 2.2.0",
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 2.2.0",
+      "Microsoft.AspNetCore.Identity.UI >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 2.2.4",
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.4",
@@ -13012,23 +13017,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jawed\\.nuget\\packages\\": {},
+    "C:\\Users\\Valen\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
+      "projectUniqueName": "C:\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
       "projectName": "SneakersApp",
-      "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
-      "packagesPath": "C:\\Users\\Jawed\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp\\obj\\",
+      "projectPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj",
+      "packagesPath": "C:\\Users\\Valen\\.nuget\\packages\\",
+      "outputPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jawed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13041,11 +13046,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj"
+            "C:\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj": {
+              "projectPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp.Data\\SneakersApp.Data.csproj"
             },
-            "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj"
+            "C:\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj": {
+              "projectPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp.Services\\SneakersApp.Services.csproj"
             }
           }
         }
@@ -13064,6 +13069,18 @@
             "target": "Package",
             "version": "[2.2.0, )",
             "autoReferenced": true
+          },
+          "Microsoft.AspNetCore.Identity": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
+          "Microsoft.AspNetCore.Identity.UI": {
+            "target": "Package",
+            "version": "[2.2.0, )"
           },
           "Microsoft.AspNetCore.Razor.Design": {
             "suppressParent": "All",

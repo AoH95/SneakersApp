@@ -2,12 +2,14 @@
 using Microsoft;
 using SneakersApp.Data.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace SneakersApp.Data
 {
-    public class SneakersAppDbContext : DbContext 
+    public class SneakersAppDbContext : IdentityDbContext<User>
     {
-       public SneakersAppDbContext(DbContextOptions options) : base(options)
+       public SneakersAppDbContext(DbContextOptions<SneakersAppDbContext> options) : base(options)
        {
            
        }

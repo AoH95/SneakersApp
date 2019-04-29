@@ -13,6 +13,11 @@ using SneakersApp.Data;
 using Microsoft.EntityFrameworkCore;
 using SneakersApp.Services;
 using System.Data.SqlClient;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using SneakersApp.Data.Models;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Routing;
 
 namespace SneakersApp
 {
@@ -52,8 +57,36 @@ namespace SneakersApp
             _connection = builder.ConnectionString;
 
             services.AddDbContext<SneakersAppDbContext>(options =>
-                options.UseSqlServer(_connection)
+                options.UseSqlServer(_connection, b => b.MigrationsAssembly("SneakersApp"))
             );
+
+            services.AddIdentity<User, IdentityRole>()
+                .AddEntityFrameworkStores<SneakersAppDbContext>()
+                .AddDefaultTokenProviders();
+
+            services.Configure<IdentityOptions>(options =>
+            {
+                options.Password.RequireDigit = true;
+                options.Password.RequiredLength = 8;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireLowercase = true;
+
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(30);
+                options.Lockout.MaxFailedAccessAttempts = 10;
+
+                options.User.RequireUniqueEmail = true;
+            });
+
+            services.ConfigureApplicationCookie(options =>
+            {
+                options.Cookie.HttpOnly = true;
+                options.Cookie.Expiration = TimeSpan.FromDays(150);
+
+                options.LoginPath = "/Account/login";
+                options.AccessDeniedPath = "/Account/AccessDenied";
+                options.SlidingExpiration = true;
+            });
 
             services.Configure<CookiePolicyOptions>(options =>
             {
@@ -69,7 +102,7 @@ namespace SneakersApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
             if (env.IsDevelopment())
             {
@@ -86,12 +119,22 @@ namespace SneakersApp
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-            app.UseMvc(routes =>
-            {
-                routes.MapRoute(
-                    name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
-            });
+            app.UseAuthentication();
+
+            app.UseMvc(ConfigureRoute);
+        }
+
+        private void ConfigureRoute(IRouteBuilder routeBuilder)
+        {
+
+            //routeBuilder.MapRoute(
+              //  name: "areas",
+               // template: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+
+            routeBuilder.MapRoute(
+                name: "Default",
+                template: "{controller}/{action}/{id?}",
+                defaults: new { controller = "Home", action = "Index" });
         }
     }
 }
