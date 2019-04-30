@@ -1,0 +1,19 @@
+﻿@model SneakersApp.Models.CreateCollectionModel;
+
+    <div>
+        <form asp-action="createCollection" method="POST" id="create-form">
+            <div>
+                <label asp-for="Title">Name</label>
+                <input asp-for="Title" />
+            </div>
+            <div>
+                <label asp-for="Description">Description</label>
+                <input asp-for="Description" />
+            </div>
+            <div>
+                <button type="submit" id="btn-upload">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>

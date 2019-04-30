@@ -1,0 +1,22 @@
+﻿@model SneakersApp.Models.ShoeIndexModel
+
+<div class="container body-content">
+    <div class="shoes-content">
+        @foreach(var shoes in Model.Shoes)
+        {
+            <a asp-controller="Shoe" asp-action="Detail" asp-route-id="@shoes.Id">
+                <div class="shoes-image" style="background-image:url(@shoes.Url)"></div>
+                <span>@shoes.Title</span>
+                <span>@shoes.Id</span>
+                <ul>
+                    @foreach (var tag in shoes.Tags)
+                    {
+                    <li>
+                        @tag.Description
+                    </li>
+                    }
+                </ul>
+            </a>
+        }
+    </div>
+</div>

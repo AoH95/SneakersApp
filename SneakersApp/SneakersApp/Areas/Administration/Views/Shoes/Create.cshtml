@@ -1,0 +1,38 @@
+﻿@model SneakersApp.Models.UploadShoeModel;
+
+    <div>
+        <!--asp-items="ViewBag.CollectionsID"-->
+        <form asp-action="UploadNewShoe" method="POST" enctype="multipart/form-data" id="upload-form">
+            <div>
+                <label asp-for="Title">Name</label>
+                <input asp-for="Title" />
+            </div>
+            <div>
+                <label asp-for="Tags">Tags</label>
+                <input asp-for="Tags" />
+            </div>
+            <div class="form-group">
+                <label asp-for="CollectionsID" class="control-label"></label>
+                <select asp-for="CollectionsID" class="form-control">
+                    @foreach (var collection in Model.Collections)
+                    {
+                    <option value="@collection.Id">
+                        @collection.Title
+                    </option>
+                    }
+                </select>
+            </div>
+
+            <div>
+                <label>
+                    Browse for Image
+                    <input type="file" name="file" style="display:none;" />
+                </label>
+            </div>
+            <div>
+                <button type="submit" id="btn-upload">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
