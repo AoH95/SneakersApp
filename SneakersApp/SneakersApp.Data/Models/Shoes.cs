@@ -13,5 +13,7 @@ namespace SneakersApp.Data.Models
         public virtual IEnumerable<Tag> Tags { get; set; }
         [ForeignKey("CollectionID")]
         public Collection Collection { get; set; }
+        [ForeignKey("UserID")]
+        public User User { get; set; }
     }
 }

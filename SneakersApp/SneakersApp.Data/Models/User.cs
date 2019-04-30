@@ -15,5 +15,7 @@ namespace SneakersApp.Data.Models
         [Required]
         [StringLength(50)]
         public string Firstname { get; set; }
+        public IList<Collection> Collection { get; set; }
+        public IList<Shoes> Shoes { get; set; }
     }
 }

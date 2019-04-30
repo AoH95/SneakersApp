@@ -223,3 +223,9 @@ C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Accou
 C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_AuthenticationPartial.g.cshtml.cs
 C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutForm.g.cshtml.cs
 C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_MessagePartial.g.cshtml.cs
+\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
+\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_AuthenticationPartial.g.cshtml.cs
+\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutForm.g.cshtml.cs
+\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_MessagePartial.g.cshtml.cs
