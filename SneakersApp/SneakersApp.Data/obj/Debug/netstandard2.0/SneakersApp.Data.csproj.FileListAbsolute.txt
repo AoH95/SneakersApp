@@ -49,3 +49,12 @@ C:\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp
 C:\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.dll
 C:\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.pdb
 C:\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.csprojAssemblyReference.cache
+D:\doc\SneakersApp\SneakersApp\SneakersApp.Data\bin\Debug\netstandard2.0\SneakersApp.Data.deps.json
+D:\doc\SneakersApp\SneakersApp\SneakersApp.Data\bin\Debug\netstandard2.0\SneakersApp.Data.dll
+D:\doc\SneakersApp\SneakersApp\SneakersApp.Data\bin\Debug\netstandard2.0\SneakersApp.Data.pdb
+D:\doc\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.csprojAssemblyReference.cache
+D:\doc\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.csproj.CoreCompileInputs.cache
+D:\doc\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.AssemblyInfoInputs.cache
+D:\doc\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.AssemblyInfo.cs
+D:\doc\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.dll
+D:\doc\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.pdb
