@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Http;
+using SneakersApp.Data.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,6 +12,8 @@ namespace SneakersApp.Models
         public int Id { get; set; }
         public string Title { get; set; }
         public string Tags { get; set; }
+        public int CollectionsID { get; set; }
+        public IEnumerable<Collection> Collections { get; set; }
         public IFormFile ImageUpload { get; set; }
     }
 }

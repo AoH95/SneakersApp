@@ -5,7 +5,7 @@
         @foreach(var collection in Model.Collection)
         {
             <a asp-controller="Collection" asp-action="Detail" asp-route-id="@collection.Id">
-                ok
+                @collection.Title
             </a>
         }
     </div>

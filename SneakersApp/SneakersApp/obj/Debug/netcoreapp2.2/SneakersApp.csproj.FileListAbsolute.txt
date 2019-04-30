@@ -230,3 +230,4 @@ C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Share
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutForm.g.cshtml.cs
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_MessagePartial.g.cshtml.cs
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shoe\Usershoe.g.cshtml.cs
+\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Collection\Create.g.cshtml.cs

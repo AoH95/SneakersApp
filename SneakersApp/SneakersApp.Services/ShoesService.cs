@@ -26,6 +26,11 @@ namespace SneakersApp.Services
             return _ctx.Shoes.Where(shoe => shoe.UserId == id);
         }
 
+        public IEnumerable<Shoes> GetAllByCollection(string id)
+        {
+            return _ctx.Shoes.Where(shoe => shoe.CollectionID == id);
+        }
+
         public Shoes GetById(int id)
         {
             return GetAll().Where(img => img.Id == id).First();
@@ -71,7 +76,7 @@ namespace SneakersApp.Services
             return blobClient.GetContainerReference(containerName);
         }
 
-        public async Task createShoe(string title, string tags, Uri uri, string id)
+        public async Task createShoe(string title, string tags, Uri uri, string id, string description)
         {
             var shoe = new Shoes
             {
@@ -79,7 +84,8 @@ namespace SneakersApp.Services
                 Tags = ParseTags(tags),
                 Url = uri.AbsoluteUri,
                 Created = DateTime.Now,
-                UserId = id
+                UserId = id,
+                Description = description
             };
 
             _ctx.Add(shoe);

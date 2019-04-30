@@ -11,22 +11,24 @@ using SneakersApp.Services;
 using SneakersApp.Data;
 using SneakersApp.Data.Models;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace SneakersApp.Controllers
 {
     public class ShoeController : BaseController
     {
         private readonly IShoe _shoesService;
+        private readonly ICollection _collectionService;
         private IConfiguration _config;
         private readonly UserManager<User> _userManager;
-
         private string AzureConnectionString { get; }
 
-        public ShoeController(IShoe shoesService, IConfiguration config, SneakersAppDbContext context, UserManager<User> userManager) : base(context)
+        public ShoeController(IShoe shoesService, ICollection collectionService,  IConfiguration config, SneakersAppDbContext context, UserManager<User> userManager) : base(context)
         {
             _userManager = userManager;
             _shoesService = shoesService;
             _config = config;
+            _collectionService = collectionService;
             AzureConnectionString = _config["AzureStorageConnectionString"];
         }
 
@@ -101,7 +103,11 @@ namespace SneakersApp.Controllers
 
         public IActionResult Create()
         {
-            var model = new UploadShoeModel();
+            var idUser = _userManager.GetUserId(User);
+            var collections = _collectionService.GetAllByUser(idUser);
+            var model = new UploadShoeModel() {
+                Collections = collections
+            };
             return View(model);
         }
 
@@ -123,7 +129,7 @@ namespace SneakersApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UploadNewShoe(IFormFile file, string tags, string title)
+        public async Task<IActionResult> UploadNewShoe(IFormFile file, string tags, string title, string description)
         {
             var container = _shoesService.GetBlobContainer(AzureConnectionString, "images");
             var content = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
@@ -132,7 +138,7 @@ namespace SneakersApp.Controllers
             var blockBlob = container.GetBlockBlobReference(fileName);
 
             await blockBlob.UploadFromStreamAsync(file.OpenReadStream());
-            await _shoesService.createShoe(title, tags, blockBlob.Uri, idUser);
+            await _shoesService.createShoe(title, tags, blockBlob.Uri, idUser, description);
 
             return RedirectToAction("Index", "Shoe");
         }
