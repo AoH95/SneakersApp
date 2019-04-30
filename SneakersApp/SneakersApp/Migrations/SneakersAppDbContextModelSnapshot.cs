@@ -141,11 +141,11 @@ namespace SneakersApp.Migrations
 
                     b.Property<string>("Title");
 
-                    b.Property<string>("UserID");
+                    b.Property<string>("UserId1");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserID");
+                    b.HasIndex("UserId1");
 
                     b.ToTable("Collections");
                 });
@@ -164,13 +164,13 @@ namespace SneakersApp.Migrations
 
                     b.Property<string>("Url");
 
-                    b.Property<string>("UserID");
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 
                     b.HasIndex("CollectionID");
 
-                    b.HasIndex("UserID");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Shoes");
                 });
@@ -300,7 +300,7 @@ namespace SneakersApp.Migrations
                 {
                     b.HasOne("SneakersApp.Data.Models.User", "User")
                         .WithMany("Collection")
-                        .HasForeignKey("UserID");
+                        .HasForeignKey("UserId1");
                 });
 
             modelBuilder.Entity("SneakersApp.Data.Models.Shoes", b =>
@@ -311,7 +311,7 @@ namespace SneakersApp.Migrations
 
                     b.HasOne("SneakersApp.Data.Models.User", "User")
                         .WithMany("Shoes")
-                        .HasForeignKey("UserID");
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("SneakersApp.Data.Models.Tag", b =>

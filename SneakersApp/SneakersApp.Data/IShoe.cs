@@ -9,10 +9,11 @@ namespace SneakersApp.Data
     public interface IShoe
     {
         IEnumerable<Shoes> GetAll();
+        IEnumerable<Shoes> GetAllByUser(string id);
         IEnumerable<Shoes> GetWithTag(string tag);
         Shoes GetById(int id);
         CloudBlobContainer GetBlobContainer(string connectionString, string containerName);
-        Task createShoe(string title, string tags, Uri uri);
+        Task createShoe(string title, string tags, Uri uri, string id);
         List<Tag> ParseTags(string tags);
         Task DeleteShoe(Shoes shoe);
         Task PutShoe(int id, Shoes shoe);

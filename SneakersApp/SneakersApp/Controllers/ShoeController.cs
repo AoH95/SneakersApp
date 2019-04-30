@@ -10,17 +10,21 @@ using SneakersApp.Models;
 using SneakersApp.Services;
 using SneakersApp.Data;
 using SneakersApp.Data.Models;
+using Microsoft.AspNetCore.Identity;
 
 namespace SneakersApp.Controllers
 {
-    public class ShoeController : Controller
+    public class ShoeController : BaseController
     {
         private readonly IShoe _shoesService;
         private IConfiguration _config;
+        private readonly UserManager<User> _userManager;
+
         private string AzureConnectionString { get; }
 
-        public ShoeController(IShoe shoesService, IConfiguration config)
+        public ShoeController(IShoe shoesService, IConfiguration config, SneakersAppDbContext context, UserManager<User> userManager) : base(context)
         {
+            _userManager = userManager;
             _shoesService = shoesService;
             _config = config;
             AzureConnectionString = _config["AzureStorageConnectionString"];
@@ -124,11 +128,11 @@ namespace SneakersApp.Controllers
             var container = _shoesService.GetBlobContainer(AzureConnectionString, "images");
             var content = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
             var fileName = content.FileName.Trim('"');
-
+            var idUser = _userManager.GetUserId(User);
             var blockBlob = container.GetBlockBlobReference(fileName);
 
             await blockBlob.UploadFromStreamAsync(file.OpenReadStream());
-            await _shoesService.createShoe(title, tags, blockBlob.Uri);
+            await _shoesService.createShoe(title, tags, blockBlob.Uri, idUser);
 
             return RedirectToAction("Index", "Shoe");
         }
@@ -153,6 +157,17 @@ namespace SneakersApp.Controllers
             }
             await _shoesService.PutShoe(id, shoe);
             return RedirectToAction("Index", "Shoe");
+        }
+        public IActionResult Usershoe()
+        {
+            var idUser = _userManager.GetUserId(User);
+            var shoesList = _shoesService.GetAllByUser(idUser);
+            var model = new ShoeIndexModel()
+            {
+                Shoes = shoesList,
+                SearchQuery = idUser
+            };
+            return View(model);
         }
     }
 }   

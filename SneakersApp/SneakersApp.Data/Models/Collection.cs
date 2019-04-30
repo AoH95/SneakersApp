@@ -11,7 +11,7 @@ namespace SneakersApp.Data.Models
         public string Title { get; set; }
         public string Description { get; set; }
         public DateTime Created { get; set; }
-        [ForeignKey("UserID")]
+        private string UserId { get; set; }
         public User User { get; set; }
         public IList<Shoes> Shoes { get; set; }
     }

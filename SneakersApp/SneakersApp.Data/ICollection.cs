@@ -8,6 +8,7 @@ namespace SneakersApp.Data
     public interface ICollection
     {
         IEnumerable<Collection> GetAll();
+        IEnumerable<Collection> GetAllByUser(string id);
         Collection GetById(int id);
         Task createCollection(Collection collection);
         Task Delete(Collection collection);

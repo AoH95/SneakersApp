@@ -18,6 +18,10 @@ namespace SneakersApp.Services
         {
             return _ctx.Collections;
         }
+        public IEnumerable<Collection> GetAllByUser(string id)
+        {
+            return _ctx.Collections.Where(collection => collection.User.Id == id);
+        }
         public Collection GetById(int id)
         {
             return GetAll().Where(collection => collection.Id == id).First();

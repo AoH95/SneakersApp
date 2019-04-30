@@ -9,16 +9,18 @@ using Microsoft.Extensions.Configuration;
 using SneakersApp.Models;
 using SneakersApp.Services;
 using SneakersApp.Data;
+using Microsoft.AspNetCore.Identity;
 using SneakersApp.Data.Models;
 
 namespace SneakersApp.Controllers
 {
-    public class CollectionController : Controller
+    public class CollectionController : BaseController
     {
         private readonly ICollection _collectionService;
-
-        public CollectionController(ICollection collectionService)
+        private readonly UserManager<User> _userManager;
+        public CollectionController(ICollection collectionService, UserManager<User> userManager, SneakersAppDbContext context) : base(context)
         {
+            _userManager = userManager;
             _collectionService = collectionService;
         }
 
@@ -31,7 +33,15 @@ namespace SneakersApp.Controllers
                 Collection = collectionList,
                 SearchQuery = ""
             };
+
             return View(model);
+        }
+
+        public IActionResult UserCollection()
+        {
+            var idUser = _userManager.GetUserId(User);
+            var collectionList = _collectionService.GetAllByUser(idUser);
+            return View();
         }
     }
 }

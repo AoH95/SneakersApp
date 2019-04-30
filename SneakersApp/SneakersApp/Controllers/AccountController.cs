@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SneakersApp.Data.Models;
 
-namespace BetEtMechant.Controllers
+namespace SneakersApp.Controllers
 {
     public class AccountController : BaseController
     {

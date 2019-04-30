@@ -21,6 +21,10 @@ namespace SneakersApp.Services
         {
             return _ctx.Shoes.Include(img => img.Tags);
         }
+        public IEnumerable<Shoes> GetAllByUser(string id)
+        {
+            return _ctx.Shoes.Where(shoe => shoe.UserId == id);
+        }
 
         public Shoes GetById(int id)
         {
@@ -67,14 +71,15 @@ namespace SneakersApp.Services
             return blobClient.GetContainerReference(containerName);
         }
 
-        public async Task createShoe(string title, string tags, Uri uri)
+        public async Task createShoe(string title, string tags, Uri uri, string id)
         {
             var shoe = new Shoes
             {
                 Title = title,
                 Tags = ParseTags(tags),
                 Url = uri.AbsoluteUri,
-                Created = DateTime.Now
+                Created = DateTime.Now,
+                UserId = id
             };
 
             _ctx.Add(shoe);
