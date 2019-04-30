@@ -1,14 +1,24 @@
 ﻿@model SneakersApp.Models.ShoesDetailModel;
 
-    <div class="shoes_detail_container">
-        <div class="shoes_img_container">
+<div class="shoes_detail_container">
+    <div class="row">
+        <div class="shoes_img_container col-md-4">
             <img src="@Model.Url" alt="@Model.Title" />
         </div>
-        <div class="shoes_infos_container">
-            <p>Name: @Model.Title</p>
-            <p>Uploaded: @Model.Title</p>
+        <div class="shoes_infos_container col-md-8">
+            <h1>@Model.Title</h1>
+            <span>Créé le @Model.Created</span>
         </div>
-        <a asp-controller="Shoe" asp-action="Update" asp-route-id="@Model.Id">Update</a>
-        <a asp-controller="Shoe" asp-action="Delete" asp-route-id="@Model.Id">Delete this shoe</a>
-        <a asp-controller="Shoe" asp-action="Index">Back to home</a>
     </div>
+    <div class="shoes_description_container">
+        <h2>Description</h2>
+        <p>
+            Nunc vero inanes flatus quorundam vile esse quicquid extra urbis pomerium nascitur aestimant praeter orbos et caelibes, nec credi potest qua obsequiorum diversitate coluntur homines sine liberis Romae.
+
+            Iamque lituis cladium concrepantibus internarum non celate ut antea turbidum saeviebat ingenium a veri consideratione detortum et nullo inpositorum vel conpositorum fidem sollemniter inquirente nec discernente a societate noxiorum insontes velut exturbatum e iudiciis fas omne discessit, et causarum legitima silente defensione carnifex rapinarum sequester et obductio capitum et bonorum ubique multatio versabatur per orientales provincias, quas recensere puto nunc oportunum absque Mesopotamia digesta, cum bella Parthica dicerentur, et Aegypto, quam necessario aliud reieci ad tempus.
+        </p>
+    </div>
+    <a asp-controller="Shoe" asp-action="Update" asp-route-id="@Model.Id">Update</a>
+    <a asp-controller="Shoe" asp-action="Delete" asp-route-id="@Model.Id">Delete this shoe</a>
+    <a asp-controller="Shoe" asp-action="Index">Back to home</a>
+</div>
