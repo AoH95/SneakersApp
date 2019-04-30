@@ -165,7 +165,7 @@ namespace SneakersApp.Controllers
             var model = new ShoeIndexModel()
             {
                 Shoes = shoesList,
-                SearchQuery = idUser
+                SearchQuery = ""
             };
             return View(model);
         }
