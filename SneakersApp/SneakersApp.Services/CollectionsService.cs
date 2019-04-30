@@ -18,6 +18,10 @@ namespace SneakersApp.Services
         {
             return _ctx.Collections;
         }
+        public IEnumerable<Collection> GetAllByUser(string id)
+        {
+            return _ctx.Collections.Where(collection => collection.UserId == id);
+        }
         public Collection GetById(int id)
         {
             return GetAll().Where(collection => collection.Id == id).First();
@@ -32,9 +36,18 @@ namespace SneakersApp.Services
             return _ctx.Collections.Any(e => e.Id == id);
         }
 
-        public Task createCollection(Collection collection)
+        public async Task createCollection(string title, string description, string id)
         {
-            throw new NotImplementedException();
+            var collection = new Collection
+            {
+                Title = title,
+                Description = description,
+                Created = DateTime.Now,
+                UserId = id
+            };
+
+            _ctx.Add(collection);
+            await _ctx.SaveChangesAsync();
         }
 
         public Task PutCollection(int id, Collection collection)

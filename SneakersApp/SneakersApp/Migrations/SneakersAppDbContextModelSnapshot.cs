@@ -141,11 +141,11 @@ namespace SneakersApp.Migrations
 
                     b.Property<string>("Title");
 
-                    b.Property<string>("UserID");
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserID");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Collections");
                 });
@@ -156,21 +156,21 @@ namespace SneakersApp.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int?>("CollectionID");
+                    b.Property<string>("CollectionID");
 
                     b.Property<DateTime>("Created");
+
+                    b.Property<string>("Description");
 
                     b.Property<string>("Title");
 
                     b.Property<string>("Url");
 
-                    b.Property<string>("UserID");
+                    b.Property<string>("UserId");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CollectionID");
-
-                    b.HasIndex("UserID");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Shoes");
                 });
@@ -298,20 +298,16 @@ namespace SneakersApp.Migrations
 
             modelBuilder.Entity("SneakersApp.Data.Models.Collection", b =>
                 {
-                    b.HasOne("SneakersApp.Data.Models.User", "User")
+                    b.HasOne("SneakersApp.Data.Models.User")
                         .WithMany("Collection")
-                        .HasForeignKey("UserID");
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("SneakersApp.Data.Models.Shoes", b =>
                 {
-                    b.HasOne("SneakersApp.Data.Models.Collection", "Collection")
+                    b.HasOne("SneakersApp.Data.Models.User")
                         .WithMany("Shoes")
-                        .HasForeignKey("CollectionID");
-
-                    b.HasOne("SneakersApp.Data.Models.User", "User")
-                        .WithMany("Shoes")
-                        .HasForeignKey("UserID");
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("SneakersApp.Data.Models.Tag", b =>

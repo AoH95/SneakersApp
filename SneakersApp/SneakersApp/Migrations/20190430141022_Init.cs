@@ -164,14 +164,14 @@ namespace SneakersApp.Migrations
                     Title = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
                     Created = table.Column<DateTime>(nullable: false),
-                    UserID = table.Column<string>(nullable: true)
+                    UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Collections", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Collections_AspNetUsers_UserID",
-                        column: x => x.UserID,
+                        name: "FK_Collections_AspNetUsers_UserId",
+                        column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -184,23 +184,18 @@ namespace SneakersApp.Migrations
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
                     Title = table.Column<string>(nullable: true),
+                    Description = table.Column<string>(nullable: true),
                     Created = table.Column<DateTime>(nullable: false),
                     Url = table.Column<string>(nullable: true),
-                    CollectionID = table.Column<int>(nullable: true),
-                    UserID = table.Column<string>(nullable: true)
+                    CollectionID = table.Column<string>(nullable: true),
+                    UserId = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Shoes", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Shoes_Collections_CollectionID",
-                        column: x => x.CollectionID,
-                        principalTable: "Collections",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Shoes_AspNetUsers_UserID",
-                        column: x => x.UserID,
+                        name: "FK_Shoes_AspNetUsers_UserId",
+                        column: x => x.UserId,
                         principalTable: "AspNetUsers",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Restrict);
@@ -266,19 +261,14 @@ namespace SneakersApp.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Collections_UserID",
+                name: "IX_Collections_UserId",
                 table: "Collections",
-                column: "UserID");
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Shoes_CollectionID",
+                name: "IX_Shoes_UserId",
                 table: "Shoes",
-                column: "CollectionID");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Shoes_UserID",
-                table: "Shoes",
-                column: "UserID");
+                column: "UserId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Tags_ShoesId",
@@ -304,6 +294,9 @@ namespace SneakersApp.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "Collections");
+
+            migrationBuilder.DropTable(
                 name: "Tags");
 
             migrationBuilder.DropTable(
@@ -311,9 +304,6 @@ namespace SneakersApp.Migrations
 
             migrationBuilder.DropTable(
                 name: "Shoes");
-
-            migrationBuilder.DropTable(
-                name: "Collections");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");

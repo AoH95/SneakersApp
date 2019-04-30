@@ -10,19 +10,25 @@ using SneakersApp.Models;
 using SneakersApp.Services;
 using SneakersApp.Data;
 using SneakersApp.Data.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace SneakersApp.Controllers
 {
-    public class ShoeController : Controller
+    public class ShoeController : BaseController
     {
         private readonly IShoe _shoesService;
+        private readonly ICollection _collectionService;
         private IConfiguration _config;
+        private readonly UserManager<User> _userManager;
         private string AzureConnectionString { get; }
 
-        public ShoeController(IShoe shoesService, IConfiguration config)
+        public ShoeController(IShoe shoesService, ICollection collectionService,  IConfiguration config, SneakersAppDbContext context, UserManager<User> userManager) : base(context)
         {
+            _userManager = userManager;
             _shoesService = shoesService;
             _config = config;
+            _collectionService = collectionService;
             AzureConnectionString = _config["AzureStorageConnectionString"];
         }
 
@@ -97,7 +103,11 @@ namespace SneakersApp.Controllers
 
         public IActionResult Create()
         {
-            var model = new UploadShoeModel();
+            var idUser = _userManager.GetUserId(User);
+            var collections = _collectionService.GetAllByUser(idUser);
+            var model = new UploadShoeModel() {
+                Collections = collections
+            };
             return View(model);
         }
 
@@ -119,16 +129,16 @@ namespace SneakersApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UploadNewShoe(IFormFile file, string tags, string title)
+        public async Task<IActionResult> UploadNewShoe(IFormFile file, string tags, string title, string description)
         {
             var container = _shoesService.GetBlobContainer(AzureConnectionString, "images");
             var content = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
             var fileName = content.FileName.Trim('"');
-
+            var idUser = _userManager.GetUserId(User);
             var blockBlob = container.GetBlockBlobReference(fileName);
 
             await blockBlob.UploadFromStreamAsync(file.OpenReadStream());
-            await _shoesService.createShoe(title, tags, blockBlob.Uri);
+            await _shoesService.createShoe(title, tags, blockBlob.Uri, idUser, description);
 
             return RedirectToAction("Index", "Shoe");
         }
@@ -153,6 +163,17 @@ namespace SneakersApp.Controllers
             }
             await _shoesService.PutShoe(id, shoe);
             return RedirectToAction("Index", "Shoe");
+        }
+        public IActionResult Usershoe()
+        {
+            var idUser = _userManager.GetUserId(User);
+            var shoesList = _shoesService.GetAllByUser(idUser);
+            var model = new ShoeIndexModel()
+            {
+                Shoes = shoesList,
+                SearchQuery = ""
+            };
+            return View(model);
         }
     }
 }   
