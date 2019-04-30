@@ -14,7 +14,7 @@ namespace SneakersApp.Data
         IEnumerable<Shoes> GetAllByCollection(string id);
         Shoes GetById(int id);
         CloudBlobContainer GetBlobContainer(string connectionString, string containerName);
-        Task createShoe(string title, string tags, Uri uri, string id, string description);
+        Task createShoe(string title, string tags, Uri uri, string id, string description, string CollectionsID);
         List<Tag> ParseTags(string tags);
         Task DeleteShoe(Shoes shoe);
         Task PutShoe(int id, Shoes shoe);

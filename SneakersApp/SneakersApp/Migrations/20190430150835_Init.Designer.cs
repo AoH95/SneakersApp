@@ -10,7 +10,7 @@ using SneakersApp.Data;
 namespace SneakersApp.Migrations
 {
     [DbContext(typeof(SneakersAppDbContext))]
-    [Migration("20190430141022_Init")]
+    [Migration("20190430150835_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

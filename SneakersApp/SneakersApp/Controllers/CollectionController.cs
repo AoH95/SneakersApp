@@ -42,11 +42,18 @@ namespace SneakersApp.Controllers
             return View(model);
         }
 
-        public IActionResult UserCollection()
+        public IActionResult Usercollection()
         {
             var idUser = _userManager.GetUserId(User);
             var collectionList = _collectionService.GetAllByUser(idUser);
-            return View();
+
+            var model = new CollectionIndexModel()
+            {
+                Collection = collectionList,
+                SearchQuery = ""
+            };
+
+            return View(model);
         }
 
         public IActionResult Create()
@@ -61,11 +68,40 @@ namespace SneakersApp.Controllers
             var shoes = _shoeService.GetAllByCollection(id.ToString());
             var model = new CollectionDetailModel()
             {
+                Id = id,
                 Title = collection.Title,
                 Shoes = shoes
             };
 
             return View(model);
+        }
+        public IActionResult Update(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var idUser = _userManager.GetUserId(User);
+            var collection = _collectionService.GetById(id);
+            if (collection == null)
+            {
+                return NotFound();
+            }
+            var model = new CreateCollectionModel()
+            {
+                Id = id
+            };
+
+            return View(model);
+        }
+        public async Task<IActionResult> UpdateCollection(int id, Collection collection)
+        {
+            if (id != collection.Id)
+            {
+                return BadRequest();
+            }
+            await _collectionService.PutCollection(id, collection);
+            return RedirectToAction("Index", "Collection");
         }
 
         [HttpPost]
@@ -74,6 +110,17 @@ namespace SneakersApp.Controllers
             var idUser = _userManager.GetUserId(User);
             await _collectionService.createCollection(title, description, idUser);
 
+            return RedirectToAction("Index", "Collection");
+        }
+        public async Task<IActionResult> Delete(int id)
+        {
+            var collection = _collectionService.GetById(id);
+
+            if (collection == null)
+            {
+                return NotFound();
+            }
+            await _collectionService.DeleteCollection(collection);
             return RedirectToAction("Index", "Collection");
         }
     }

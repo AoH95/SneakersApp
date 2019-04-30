@@ -26,7 +26,7 @@ namespace SneakersApp.Services
         {
             return GetAll().Where(collection => collection.Id == id).First();
         }
-        public async Task Delete(Collection collection)
+        public async Task DeleteCollection(Collection collection)
         {
             _ctx.Remove(collection);
             await _ctx.SaveChangesAsync();

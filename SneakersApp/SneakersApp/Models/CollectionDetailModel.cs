@@ -8,6 +8,7 @@ namespace SneakersApp.Models
 {
     public class CollectionDetailModel
     {
+        public int Id { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
         public IEnumerable<Shoes> Shoes { get; set; }

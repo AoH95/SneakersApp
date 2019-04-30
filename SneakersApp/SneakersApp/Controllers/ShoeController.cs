@@ -117,19 +117,22 @@ namespace SneakersApp.Controllers
             {
                 return NotFound();
             }
+            var idUser = _userManager.GetUserId(User);
+            var collections = _collectionService.GetAllByUser(idUser);
             var shoe = _shoesService.GetById(id);
             if(shoe == null)
             {
                 return NotFound();
             }
             var model = new UploadShoeModel() {
-                   Id = shoe.Id
+                Id = shoe.Id,
+                Collections = collections
             };
             return View(model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> UploadNewShoe(IFormFile file, string tags, string title, string description)
+        public async Task<IActionResult> UploadNewShoe(IFormFile file, string tags, string title, string description, string CollectionsID)
         {
             var container = _shoesService.GetBlobContainer(AzureConnectionString, "images");
             var content = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
@@ -138,7 +141,7 @@ namespace SneakersApp.Controllers
             var blockBlob = container.GetBlockBlobReference(fileName);
 
             await blockBlob.UploadFromStreamAsync(file.OpenReadStream());
-            await _shoesService.createShoe(title, tags, blockBlob.Uri, idUser, description);
+            await _shoesService.createShoe(title, tags, blockBlob.Uri, idUser, description, CollectionsID);
 
             return RedirectToAction("Index", "Shoe");
         }

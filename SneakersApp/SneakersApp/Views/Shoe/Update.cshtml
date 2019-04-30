@@ -4,12 +4,20 @@
     <form asp-action="UpdateShoe" asp-route-id="@Model.Id" method="POST" enctype="multipart/form-data" id="upload-form">
         <div>
             <label asp-for="Title">Name</label>
-            <input asp-for="Title"/>
+            <input asp-for="Title" />
         </div>
         <div>
             <label asp-for="Tags">Tags</label>
             <input asp-for="Tags" />
         </div>
+        <select asp-for="CollectionsID" class="form-control">
+            @foreach (var collection in Model.Collections)
+            {
+                <option value="@collection.Id">
+                    @collection.Title
+                </option>
+            }
+        </select>
         <div>
             <button type="submit" id="btn-upload">
                 Submit

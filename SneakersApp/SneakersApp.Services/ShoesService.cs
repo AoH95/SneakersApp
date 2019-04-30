@@ -76,7 +76,7 @@ namespace SneakersApp.Services
             return blobClient.GetContainerReference(containerName);
         }
 
-        public async Task createShoe(string title, string tags, Uri uri, string id, string description)
+        public async Task createShoe(string title, string tags, Uri uri, string id, string description, string CollectionsID)
         {
             var shoe = new Shoes
             {
@@ -85,7 +85,8 @@ namespace SneakersApp.Services
                 Url = uri.AbsoluteUri,
                 Created = DateTime.Now,
                 UserId = id,
-                Description = description
+                Description = description,
+                CollectionID = CollectionsID
             };
 
             _ctx.Add(shoe);

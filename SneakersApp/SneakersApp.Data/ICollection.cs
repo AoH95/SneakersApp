@@ -11,7 +11,7 @@ namespace SneakersApp.Data
         IEnumerable<Collection> GetAllByUser(string id);
         Collection GetById(int id);
         Task createCollection(string title, string description, string id);
-        Task Delete(Collection collection);
+        Task DeleteCollection(Collection collection);
         Task PutCollection(int id, Collection collection);
     }
 }
