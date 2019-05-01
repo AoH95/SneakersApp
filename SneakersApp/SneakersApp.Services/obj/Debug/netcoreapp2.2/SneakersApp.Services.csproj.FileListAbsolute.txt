@@ -70,3 +70,15 @@ D:\doc\SneakerApp2\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\Snea
 D:\doc\SneakerApp2\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.csproj.CopyComplete
 D:\doc\SneakerApp2\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.dll
 D:\doc\SneakerApp2\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.pdb
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Services.deps.json
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Services.dll
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Services.pdb
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Data.dll
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\bin\Debug\netcoreapp2.2\SneakersApp.Data.pdb
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.csprojAssemblyReference.cache
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.AssemblyInfo.cs
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.csproj.CopyComplete
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.dll
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Services\obj\Debug\netcoreapp2.2\SneakersApp.Services.pdb

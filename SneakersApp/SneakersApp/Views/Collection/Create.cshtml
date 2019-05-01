@@ -2,16 +2,16 @@
 
     <div>
         <form asp-action="createCollection" method="POST" id="create-form">
-            <div>
+            <div class="form-group">
                 <label asp-for="Title">Name</label>
-                <input asp-for="Title" />
+                <input class="form-control" asp-for="Title" />
             </div>
-            <div>
+            <div class="form-group">
                 <label asp-for="Description">Description</label>
-                <input asp-for="Description" />
+                <input class="form-control" asp-for="Description" />
             </div>
             <div>
-                <button type="submit" id="btn-upload">
+                <button type="submit" id="btn-upload" class="btn btn-primary">
                     Submit
                 </button>
             </div>

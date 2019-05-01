@@ -67,3 +67,12 @@ D:\doc\SneakerApp2\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\Sneaker
 D:\doc\SneakerApp2\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.AssemblyInfo.cs
 D:\doc\SneakerApp2\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.dll
 D:\doc\SneakerApp2\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.pdb
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Data\bin\Debug\netstandard2.0\SneakersApp.Data.deps.json
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Data\bin\Debug\netstandard2.0\SneakersApp.Data.dll
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Data\bin\Debug\netstandard2.0\SneakersApp.Data.pdb
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.csprojAssemblyReference.cache
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.csproj.CoreCompileInputs.cache
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.AssemblyInfoInputs.cache
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.AssemblyInfo.cs
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.dll
+\\Mac\Home\Documents\DOTNET\lastClone\SneakersApp\SneakersApp\SneakersApp.Data\obj\Debug\netstandard2.0\SneakersApp.Data.pdb

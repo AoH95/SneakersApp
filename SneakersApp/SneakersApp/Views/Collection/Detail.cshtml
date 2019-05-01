@@ -3,11 +3,8 @@
     <div class="shoes_detail_container">
         <div class="shoes_infos_container">
             <p>Name: @Model.Title</p>
-            <p>Description: @Model.Description</p>
         </div>
         <a asp-controller="Collection" asp-action="Index">Back to home</a>
-        <a asp-controller="Collection" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
-        <a asp-controller="Collection" asp-action="Update" asp-route-id="@Model.Id">Update</a>
         @foreach (var shoes in Model.Shoes)
         {
             <a asp-controller="Shoe" asp-action="Detail" asp-route-id="@shoes.Id">

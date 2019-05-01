@@ -2,6 +2,13 @@
 @{
     Layout = null;
 }
+
+@using Microsoft.AspNetCore.Identity;
+@using SneakersApp.Data.Models;
+
+@inject SignInManager<User> signInManager;
+@inject UserManager<User> userManager;
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,36 +28,39 @@
     </environment>
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
+
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Collection" asp-action="Index">SneakersApp</a>
             </div>
-            <div class="row col">
-
-                <!-- MENU DEROULANT POUR TOI JAWED -->
-
-                <div class="menu-deroulant">
-                    <p>Collection</p>
-                    <ul>
-                        <li><a>item</a></li>
-                        <li><a>item</a></li>
-                        <li><a>item</a></li>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                @if (signInManager.IsSignedIn(User))
+                {
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Collections
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-controller="Collection" asp-action="Create">Créer une collection</a>
+                                <a class="dropdown-item" asp-controller="Collection" asp-action="Usercollection">Vos collections</a>
+                                <a class="dropdown-item" asp-controller="Collection" asp-action="Index">Toutes les collections</a>
+                            </div>
+                        </li>
+                        <li style="margin-left:20px;" class="nav-item dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Chaussures
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" asp-controller="Shoe" asp-action="Create">Créer une chaussure</a>
+                                <a class="dropdown-item" asp-controller="Shoe" asp-action="Usershoe">Vos chaussures</a>
+                                <a class="dropdown-item" asp-controller="Shoe" asp-action="Index">Toutes les chaussures</a>
+                            </div>
+                        </li>
                     </ul>
-                </div>
-
-                <div class="menu-deroulant">
-                    <p>Sneakers</p>
-                    <ul>
-                        <li><a>item</a></li>
-                        <li><a>item</a></li>
-                        <li><a>item</a></li>
-                    </ul>
-                </div>
-
-                <!-- MENU DEROULANT POUR TOI JAWED -->
-
+                }
             </div>
             <div>
                 @await Html.PartialAsync("_AuthenticationPartial")

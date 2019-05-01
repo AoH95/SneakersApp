@@ -2,17 +2,18 @@
 
     <div>
         <!--asp-items="ViewBag.CollectionsID"-->
+        @if(Model.Collections.Any()){
         <form asp-action="UploadNewShoe" method="POST" enctype="multipart/form-data" id="upload-form">
-            <div>
+            <div class="form-group">
                 <label asp-for="Title">Name</label>
-                <input asp-for="Title" />
-            </div>
-            <div>
-                <label asp-for="Tags">Tags</label>
-                <input asp-for="Tags" />
+                <input class="form-control" asp-for="Title" />
             </div>
             <div class="form-group">
-                <label asp-for="CollectionsID" class="control-label"></label>
+                <label asp-for="Tags">Tags</label>
+                <input class="form-control" asp-for="Tags" />
+            </div>
+            <div class="form-group">
+                <label asp-for="CollectionsID" class="control-label">Collection</label>
                 <select asp-for="CollectionsID" class="form-control">
                     @foreach (var collection in Model.Collections)
                     {
@@ -23,16 +24,23 @@
                 </select>
             </div>
 
-            <div>
-                <label>
+            <div class="form-group">
+                <label class="form-control-file">
                     Browse for Image
-                    <input type="file" name="file" style="display:none;" />
                 </label>
+                <input type="file" name="file" class="form-control-file"/>
             </div>
             <div>
-                <button type="submit" id="btn-upload">
+                <button type="submit" id="btn-upload" class="btn btn-primary">
                     Submit
                 </button>
             </div>
         </form>
+        }
+        else
+        {
+            <p>Vous n'avez pas encore de collections pour y ajouter vos chaussures.</p>
+            <a asp-controller="Collection" asp-action="Create">Créer une collection</a>
+        }
+
     </div>
