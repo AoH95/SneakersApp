@@ -27,11 +27,32 @@
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-controller="Collection" asp-action="Index">SneakersApp</a>
             </div>
+            <div class="row col">
+
+                <!-- MENU DEROULANT POUR TOI JAWED -->
+
+                <div class="menu-deroulant">
+                    <p>Collection</p>
+                    <ul>
+                        <li><a>item</a></li>
+                        <li><a>item</a></li>
+                        <li><a>item</a></li>
+                    </ul>
+                </div>
+
+                <div class="menu-deroulant">
+                    <p>Sneakers</p>
+                    <ul>
+                        <li><a>item</a></li>
+                        <li><a>item</a></li>
+                        <li><a>item</a></li>
+                    </ul>
+                </div>
+
+                <!-- MENU DEROULANT POUR TOI JAWED -->
+
+            </div>
             <div>
-                <a class="nav-item" asp-area="" asp-controller="Collection" asp-action="Create">Create Collection</a>
-
-                <a class="nav-item" asp-area="" asp-controller="Shoe" asp-action="Create">Create Shoes</a>
-
                 @await Html.PartialAsync("_AuthenticationPartial")
             </div>
         </nav>
