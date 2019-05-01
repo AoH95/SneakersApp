@@ -37,8 +37,6 @@ namespace SneakersApp.Controllers.API
         [HttpPost]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
-            /*if (DateTime.Now.AddYears(-18) <= model.BirthDate)
-                ModelState.AddModelError("BirthDate", "Vous devez avoir plus de 18 ans.");*/
 
             if (ModelState.IsValid)
             {
@@ -49,13 +47,13 @@ namespace SneakersApp.Controllers.API
                     Lastname = model.Name,
                     Firstname = model.Firstname
                 };
-                var result = await userManager.CreateAsync(user, model.RoleSelected);
+                var result = await userManager.CreateAsync(user, model.Password);
 
                 if (result.Succeeded)
                 {
-                    var resultRole = await this.userManager.AddToRoleAsync(user, model.Password);
+                    var resultRole = await this.userManager.AddToRoleAsync(user, model.RoleSelected);
 
-                    if (result.Succeeded)
+                    if (resultRole.Succeeded)
                     {
                         await this.userManager.AddClaimAsync(user, new Claim("BirthDate", model.BirthDate.ToString())); 
                         return RedirectToAction("index", "home");
