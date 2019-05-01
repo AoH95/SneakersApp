@@ -217,7 +217,6 @@ C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.Razor
 C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.Views.pdb
 C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.csproj.CopyComplete
 C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.csprojAssemblyReference.cache
-C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
 C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
 C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
 C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_AuthenticationPartial.g.cshtml.cs
@@ -327,3 +326,7 @@ D:\doc\SneakerApp2\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.V
 D:\doc\SneakerApp2\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.csproj.CopyComplete
 D:\doc\SneakerApp2\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.dll
 D:\doc\SneakerApp2\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.pdb
+C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Collection\Create.g.cshtml.cs
+C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Collection\Update.g.cshtml.cs
+C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Collection\Usercollection.g.cshtml.cs
+C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shoe\Usershoe.g.cshtml.cs

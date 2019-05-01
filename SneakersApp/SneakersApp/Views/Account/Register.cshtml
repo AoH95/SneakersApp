@@ -8,6 +8,7 @@
     @*<div asp-validation-summary="All"></div>*@
     <div class="form-group">
         <label asp-for="Email"></label>
+        <p>Only allowed email address domains : gmail.com</p>
         <input asp-for="Email" class="form-control" />
         <span class="text-danger" asp-validation-for="Email"></span>
     </div>

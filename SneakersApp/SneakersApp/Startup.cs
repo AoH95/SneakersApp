@@ -25,6 +25,7 @@ using Swashbuckle.AspNetCore.Swagger;
 using Serilog;
 using Serilog.Sinks.RollingFile;
 using Serilog.Events;
+using SneakersApp.Class.Validator;
 
 namespace SneakersApp
 {
@@ -72,7 +73,9 @@ namespace SneakersApp
             );
 
             services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<SneakersAppDbContext>();
+                .AddEntityFrameworkStores<SneakersAppDbContext>()
+                .AddDefaultTokenProviders()
+                .AddUserValidator<EmailDomainValidator<User>>();
 
             services.Configure<IdentityOptions>(options =>
             {
