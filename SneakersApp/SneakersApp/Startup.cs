@@ -22,6 +22,9 @@ using Microsoft.IdentityModel.Tokens;
 using SneakersApp.Models;
 using System.Text;
 using Swashbuckle.AspNetCore.Swagger;
+using Serilog;
+using Serilog.Sinks.RollingFile;
+using Serilog.Events;
 
 namespace SneakersApp
 {
@@ -44,8 +47,12 @@ namespace SneakersApp
                 {
                     builder.AddUserSecrets<Startup>();
                 }
-
                 Configuration = builder.Build();
+            Log.Logger = new LoggerConfiguration()
+                .MinimumLevel
+                .Information()
+                .WriteTo.RollingFile("Logger/log-{Date}.txt", LogEventLevel.Information)
+                .CreateLogger();
         }
 
         public IConfiguration Configuration { get; }
@@ -125,6 +132,10 @@ namespace SneakersApp
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
+            loggerFactory.AddDebug();
+            loggerFactory.AddSerilog();
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

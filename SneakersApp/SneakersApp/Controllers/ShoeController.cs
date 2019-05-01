@@ -167,6 +167,7 @@ namespace SneakersApp.Controllers
             await _shoesService.PutShoe(id, shoe);
             return RedirectToAction("Index", "Shoe");
         }
+
         public IActionResult Usershoe()
         {
             var idUser = _userManager.GetUserId(User);
