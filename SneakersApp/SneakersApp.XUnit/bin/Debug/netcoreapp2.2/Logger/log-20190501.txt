@@ -1,0 +1,11 @@
+2019-05-01 13:58:50.122 +02:00 [Information] Request starting HTTP/2.0 GET http://localhost/  
+2019-05-01 13:58:50.161 +02:00 [Warning] Failed to determine the https port for redirect.
+2019-05-01 13:58:50.216 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.HomeController.Index (SneakersApp)"'
+2019-05-01 13:58:50.224 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.HomeController.Index (SneakersApp)"
+2019-05-01 13:58:50.235 +02:00 [Information] Executing action method "SneakersApp.Controllers.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 13:58:50.238 +02:00 [Information] Executed action method "SneakersApp.Controllers.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3377ms.
+2019-05-01 13:58:50.289 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 13:58:50.616 +02:00 [Information] Executed ViewResult - view "Index" executed in 368.4004ms.
+2019-05-01 13:58:50.616 +02:00 [Information] Executed action "SneakersApp.Controllers.HomeController.Index (SneakersApp)" in 391.9642ms
+2019-05-01 13:58:50.617 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.HomeController.Index (SneakersApp)"'
+2019-05-01 13:58:50.626 +02:00 [Information] Request finished in 508.9992ms 200 text/html; charset=utf-8

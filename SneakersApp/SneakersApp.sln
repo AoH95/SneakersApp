@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakersApp.Data", "Sneaker
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SneakersApp.Services", "SneakersApp.Services\SneakersApp.Services.csproj", "{4DA41C0C-4518-410F-A444-BB7AC6487763}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SneakersApp.xUnit", "SneakersApp.xUnit\SneakersApp.xUnit.csproj", "{FE713A80-39A8-4A25-9555-0E7177DD5150}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{4DA41C0C-4518-410F-A444-BB7AC6487763}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4DA41C0C-4518-410F-A444-BB7AC6487763}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4DA41C0C-4518-410F-A444-BB7AC6487763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE713A80-39A8-4A25-9555-0E7177DD5150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE713A80-39A8-4A25-9555-0E7177DD5150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE713A80-39A8-4A25-9555-0E7177DD5150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE713A80-39A8-4A25-9555-0E7177DD5150}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
