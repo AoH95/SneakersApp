@@ -94,6 +94,7 @@ namespace SneakersApp.Controllers
 
             return View(model);
         }
+
         public async Task<IActionResult> UpdateCollection(int id, Collection collection)
         {
             if (id != collection.Id)

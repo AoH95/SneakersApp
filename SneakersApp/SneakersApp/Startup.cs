@@ -21,6 +21,7 @@ using Microsoft.AspNetCore.Routing;
 using Microsoft.IdentityModel.Tokens;
 using SneakersApp.Models;
 using System.Text;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace SneakersApp
 {
@@ -102,6 +103,11 @@ namespace SneakersApp
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddSwaggerGen(cfg =>
+            {
+                cfg.SwaggerDoc("v1", new Info { Title = "MON API SOLIDE", Description = "C'est sympa les docs comme ça pour les frontend." });
+            });
+
             services.AddAuthentication()
                 .AddCookie(cfg => cfg.SlidingExpiration = true)
                 .AddJwtBearer(cfg =>
@@ -137,6 +143,8 @@ namespace SneakersApp
             app.UseAuthentication();
 
             app.UseMvc(ConfigureRoute);
+            app.UseSwagger();
+            app.UseSwaggerUI(cfg => cfg.SwaggerEndpoint("/swagger/v1/swagger.json", "Core API"));
         }
 
         private void ConfigureRoute(IRouteBuilder routeBuilder)
