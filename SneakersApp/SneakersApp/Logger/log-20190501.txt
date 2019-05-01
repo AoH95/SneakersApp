@@ -1,0 +1,483 @@
+2019-05-01 14:02:20.225 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 14:02:20.359 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.HomeController.Index (SneakersApp)"'
+2019-05-01 14:02:20.391 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.HomeController.Index (SneakersApp)"
+2019-05-01 14:02:20.423 +02:00 [Information] Executing action method "SneakersApp.Controllers.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 14:02:20.450 +02:00 [Information] Executed action method "SneakersApp.Controllers.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.4302ms.
+2019-05-01 14:02:21.386 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 14:02:23.400 +02:00 [Information] Executed ViewResult - view "Index" executed in 2915.8403ms.
+2019-05-01 14:02:23.435 +02:00 [Information] Executed action "SneakersApp.Controllers.HomeController.Index (SneakersApp)" in 3011.2137ms
+2019-05-01 14:02:23.955 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.HomeController.Index (SneakersApp)"'
+2019-05-01 14:02:24.093 +02:00 [Information] Request finished in 3823.3078ms 200 text/html; charset=utf-8
+2019-05-01 14:02:24.154 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 14:02:24.496 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\wwwroot\css\site.css"'
+2019-05-01 14:02:24.828 +02:00 [Information] Request finished in 403.6318ms 200 text/css
+2019-05-01 14:02:32.545 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Register  
+2019-05-01 14:02:32.567 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.AccountController.Register (SneakersApp)"'
+2019-05-01 14:02:32.582 +02:00 [Information] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.AccountController.Register (SneakersApp)"
+2019-05-01 14:02:32.639 +02:00 [Information] Executing action method "SneakersApp.Controllers.AccountController.Register (SneakersApp)" - Validation state: Valid
+2019-05-01 14:02:32.650 +02:00 [Information] Executed action method "SneakersApp.Controllers.AccountController.Register (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.8692ms.
+2019-05-01 14:02:32.693 +02:00 [Information] Executing ViewResult, running view "Register".
+2019-05-01 14:02:32.916 +02:00 [Information] Executed ViewResult - view "Register" executed in 185.7469ms.
+2019-05-01 14:02:32.928 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 14:02:32.935 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 14:02:32.938 +02:00 [Information] Executed action "SneakersApp.Controllers.AccountController.Register (SneakersApp)" in 337.5931ms
+2019-05-01 14:02:32.950 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.AccountController.Register (SneakersApp)"'
+2019-05-01 14:02:32.977 +02:00 [Information] Request finished in 420.7753ms 200 text/html; charset=utf-8
+2019-05-01 14:02:33.262 +02:00 [Information] Request finished in 70.4827ms 404 
+2019-05-01 14:02:33.263 +02:00 [Information] Request finished in 78.1695ms 404 
+2019-05-01 14:02:35.900 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Login  
+2019-05-01 14:02:35.914 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.AccountController.Login (SneakersApp)"'
+2019-05-01 14:02:35.936 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.AccountController.Login (SneakersApp)"
+2019-05-01 14:02:35.950 +02:00 [Information] Executing action method "SneakersApp.Controllers.AccountController.Login (SneakersApp)" - Validation state: Valid
+2019-05-01 14:02:35.954 +02:00 [Information] Executed action method "SneakersApp.Controllers.AccountController.Login (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2744ms.
+2019-05-01 14:02:35.984 +02:00 [Information] Executing ViewResult, running view "Login".
+2019-05-01 14:02:36.053 +02:00 [Information] Executed ViewResult - view "Login" executed in 67.8452ms.
+2019-05-01 14:02:36.086 +02:00 [Information] Executed action "SneakersApp.Controllers.AccountController.Login (SneakersApp)" in 117.4949ms
+2019-05-01 14:02:36.088 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 14:02:36.098 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.AccountController.Login (SneakersApp)"'
+2019-05-01 14:02:36.152 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 14:02:36.190 +02:00 [Information] Request finished in 202.1497ms 200 text/html; charset=utf-8
+2019-05-01 14:02:36.194 +02:00 [Information] Request finished in 17.9862ms 404 
+2019-05-01 14:02:36.204 +02:00 [Information] Request finished in 103.2929ms 404 
+2019-05-01 14:02:44.092 +02:00 [Information] Request starting HTTP/2.0 POST https://localhost:44321/Account/Login application/x-www-form-urlencoded 239
+2019-05-01 14:02:44.098 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.AccountController.Login (SneakersApp)"'
+2019-05-01 14:02:44.159 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.AccountController.Login (SneakersApp)"
+2019-05-01 14:02:44.258 +02:00 [Information] Executing action method "SneakersApp.Controllers.AccountController.Login (SneakersApp)" with arguments (["SneakersApp.Models.LoginViewModel", ""]) - Validation state: Valid
+2019-05-01 14:02:44.791 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:02:45.404 +02:00 [Information] Executed DbCommand ("51"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[Firstname], [u].[Lastname], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2019-05-01 14:02:45.608 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2019-05-01 14:02:45.656 +02:00 [Information] Executed DbCommand ("6"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2019-05-01 14:02:45.678 +02:00 [Information] AuthenticationScheme: "Identity.Application" signed in.
+2019-05-01 14:02:45.687 +02:00 [Information] Executed action method "SneakersApp.Controllers.AccountController.Login (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 1424.5069ms.
+2019-05-01 14:02:45.700 +02:00 [Information] Executing RedirectResult, redirecting to "/".
+2019-05-01 14:02:45.706 +02:00 [Information] Executed action "SneakersApp.Controllers.AccountController.Login (SneakersApp)" in 1543.2387ms
+2019-05-01 14:02:45.711 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.AccountController.Login (SneakersApp)"'
+2019-05-01 14:02:45.722 +02:00 [Information] Request finished in 1629.5674ms 302 
+2019-05-01 14:02:45.726 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 14:02:45.739 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.HomeController.Index (SneakersApp)"'
+2019-05-01 14:02:45.745 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.HomeController.Index (SneakersApp)"
+2019-05-01 14:02:45.750 +02:00 [Information] Executing action method "SneakersApp.Controllers.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 14:02:45.754 +02:00 [Information] Executed action method "SneakersApp.Controllers.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.025ms.
+2019-05-01 14:02:45.762 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 14:02:45.840 +02:00 [Information] Executed ViewResult - view "Index" executed in 12.0627ms.
+2019-05-01 14:02:45.860 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 14:02:45.873 +02:00 [Information] Executed action "SneakersApp.Controllers.HomeController.Index (SneakersApp)" in 95.2759ms
+2019-05-01 14:02:45.890 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 14:02:45.914 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.HomeController.Index (SneakersApp)"'
+2019-05-01 14:02:46.028 +02:00 [Information] Request finished in 54.8753ms 304 text/css
+2019-05-01 14:02:46.036 +02:00 [Information] Request finished in 192.5282ms 200 text/html; charset=utf-8
+2019-05-01 14:02:56.066 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Collection  
+2019-05-01 14:02:56.126 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.CollectionController.Index (SneakersApp)"'
+2019-05-01 14:02:56.139 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Collection\"}". Executing action "SneakersApp.Controllers.CollectionController.Index (SneakersApp)"
+2019-05-01 14:02:56.146 +02:00 [Information] Executing action method "SneakersApp.Controllers.CollectionController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 14:02:56.154 +02:00 [Information] Executed action method "SneakersApp.Controllers.CollectionController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3.589ms.
+2019-05-01 14:02:56.183 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 14:02:56.211 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:02:56.309 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Created], [c].[Description], [c].[Title], [c].[UserId]
+FROM [Collections] AS [c]"
+2019-05-01 14:02:56.383 +02:00 [Information] Executed ViewResult - view "Index" executed in 201.7933ms.
+2019-05-01 14:02:56.435 +02:00 [Information] Executed action "SneakersApp.Controllers.CollectionController.Index (SneakersApp)" in 266.7468ms
+2019-05-01 14:02:56.444 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.CollectionController.Index (SneakersApp)"'
+2019-05-01 14:02:56.453 +02:00 [Information] Request finished in 390.9083ms 200 text/html; charset=utf-8
+2019-05-01 14:02:59.404 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Collection/Detail/3  
+2019-05-01 14:02:59.409 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:02:59.415 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Collection\"}". Executing action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"
+2019-05-01 14:02:59.422 +02:00 [Information] Executing action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" with arguments (["3"]) - Validation state: Valid
+2019-05-01 14:02:59.427 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:02:59.439 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Created], [c].[Description], [c].[Title], [c].[UserId]
+FROM [Collections] AS [c]"
+2019-05-01 14:02:59.447 +02:00 [Information] Executed action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 20.5598ms.
+2019-05-01 14:02:59.459 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:02:59.485 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__id_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[CollectionID] = @__id_0"
+2019-05-01 14:02:59.558 +02:00 [Information] Executed ViewResult - view "Detail" executed in 71.7403ms.
+2019-05-01 14:02:59.567 +02:00 [Information] Executed action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" in 143.2321ms
+2019-05-01 14:02:59.572 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:02:59.577 +02:00 [Information] Request finished in 176.2684ms 200 text/html; charset=utf-8
+2019-05-01 14:03:16.424 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe  
+2019-05-01 14:03:16.441 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Index (SneakersApp)"'
+2019-05-01 14:03:16.458 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Index (SneakersApp)"
+2019-05-01 14:03:16.468 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 14:03:16.488 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:03:16.497 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 23.377ms.
+2019-05-01 14:03:16.583 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 14:03:16.705 +02:00 [Information] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:03:16.739 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:03:16.910 +02:00 [Information] Executed ViewResult - view "Index" executed in 278.6255ms.
+2019-05-01 14:03:16.920 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 14:03:16.923 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Index (SneakersApp)" in 455.0163ms
+2019-05-01 14:03:16.971 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Index (SneakersApp)"'
+2019-05-01 14:03:16.998 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 14:03:17.073 +02:00 [Information] Request finished in 587.1811ms 200 text/html; charset=utf-8
+2019-05-01 14:03:17.077 +02:00 [Information] Request finished in 115.2577ms 304 text/css
+2019-05-01 14:03:19.532 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Detail/3  
+2019-05-01 14:03:19.540 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:03:19.554 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"
+2019-05-01 14:03:19.576 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" with arguments (["3"]) - Validation state: Valid
+2019-05-01 14:03:19.583 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:03:19.598 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:03:19.625 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:03:19.657 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 63.4353ms.
+2019-05-01 14:03:19.679 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:03:19.723 +02:00 [Information] Executed ViewResult - view "Detail" executed in 46.5279ms.
+2019-05-01 14:03:19.805 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" in 170.2497ms
+2019-05-01 14:03:19.938 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:03:20.110 +02:00 [Information] Request finished in 448.049ms 200 text/html; charset=utf-8
+2019-05-01 14:03:34.662 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe  
+2019-05-01 14:03:34.682 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Index (SneakersApp)"'
+2019-05-01 14:03:34.688 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Index (SneakersApp)"
+2019-05-01 14:03:34.693 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 14:03:34.705 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:03:34.711 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 12.855ms.
+2019-05-01 14:03:34.722 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 14:03:34.753 +02:00 [Information] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:03:34.766 +02:00 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:03:34.822 +02:00 [Information] Executed ViewResult - view "Index" executed in 63.8634ms.
+2019-05-01 14:03:35.021 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Index (SneakersApp)" in 134.1974ms
+2019-05-01 14:03:35.029 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Index (SneakersApp)"'
+2019-05-01 14:03:35.033 +02:00 [Information] Request finished in 375.4412ms 200 text/html; charset=utf-8
+2019-05-01 14:03:38.277 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Detail/7  
+2019-05-01 14:03:38.303 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:03:38.309 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"
+2019-05-01 14:03:38.322 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" with arguments (["7"]) - Validation state: Valid
+2019-05-01 14:03:38.332 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:03:38.345 +02:00 [Information] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:03:38.358 +02:00 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:03:38.363 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 37.2226ms.
+2019-05-01 14:03:38.367 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:03:38.438 +02:00 [Information] Executed ViewResult - view "Detail" executed in 5.9337ms.
+2019-05-01 14:03:38.440 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 14:03:38.468 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" in 130.0889ms
+2019-05-01 14:03:38.518 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:03:38.522 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 14:03:38.564 +02:00 [Information] Request finished in 254.1985ms 200 text/html; charset=utf-8
+2019-05-01 14:03:38.580 +02:00 [Information] Request finished in 113.6346ms 304 text/css
+2019-05-01 14:03:41.157 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe  
+2019-05-01 14:03:41.165 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Index (SneakersApp)"'
+2019-05-01 14:03:41.169 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Index (SneakersApp)"
+2019-05-01 14:03:41.172 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 14:03:41.175 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:03:41.180 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 3.6661ms.
+2019-05-01 14:03:41.184 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 14:03:41.198 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:03:41.209 +02:00 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:03:41.306 +02:00 [Information] Executed ViewResult - view "Index" executed in 32.4659ms.
+2019-05-01 14:03:41.312 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Index (SneakersApp)" in 137.1973ms
+2019-05-01 14:03:41.327 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Index (SneakersApp)"'
+2019-05-01 14:03:41.330 +02:00 [Information] Request finished in 174.0946ms 200 text/html; charset=utf-8
+2019-05-01 14:03:42.095 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Detail/1  
+2019-05-01 14:03:42.104 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:03:42.107 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"
+2019-05-01 14:03:42.111 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" with arguments (["1"]) - Validation state: Valid
+2019-05-01 14:03:42.115 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:03:42.130 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:03:42.144 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:03:42.148 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 33.0952ms.
+2019-05-01 14:03:42.151 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:03:42.167 +02:00 [Information] Executed ViewResult - view "Detail" executed in 4.7827ms.
+2019-05-01 14:03:42.364 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" in 67.3388ms
+2019-05-01 14:03:42.444 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:03:42.450 +02:00 [Information] Request finished in 354.616ms 200 text/html; charset=utf-8
+2019-05-01 14:03:45.076 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe  
+2019-05-01 14:03:45.081 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Index (SneakersApp)"'
+2019-05-01 14:03:45.088 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Index (SneakersApp)"
+2019-05-01 14:03:45.094 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 14:03:45.098 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:03:45.107 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.2198ms.
+2019-05-01 14:03:45.111 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 14:03:45.129 +02:00 [Information] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:03:45.145 +02:00 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:03:45.179 +02:00 [Information] Executed ViewResult - view "Index" executed in 40.7736ms.
+2019-05-01 14:03:45.200 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Index (SneakersApp)" in 92.5329ms
+2019-05-01 14:03:45.207 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Index (SneakersApp)"'
+2019-05-01 14:03:45.216 +02:00 [Information] Request finished in 145.886ms 200 text/html; charset=utf-8
+2019-05-01 14:04:06.865 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Collection  
+2019-05-01 14:04:06.884 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.CollectionController.Index (SneakersApp)"'
+2019-05-01 14:04:06.888 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Collection\"}". Executing action "SneakersApp.Controllers.CollectionController.Index (SneakersApp)"
+2019-05-01 14:04:06.893 +02:00 [Information] Executing action method "SneakersApp.Controllers.CollectionController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 14:04:06.900 +02:00 [Information] Executed action method "SneakersApp.Controllers.CollectionController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 2.1396ms.
+2019-05-01 14:04:06.904 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 14:04:06.937 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:06.955 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Created], [c].[Description], [c].[Title], [c].[UserId]
+FROM [Collections] AS [c]"
+2019-05-01 14:04:06.970 +02:00 [Information] Executed ViewResult - view "Index" executed in 65.2486ms.
+2019-05-01 14:04:07.014 +02:00 [Information] Executed action "SneakersApp.Controllers.CollectionController.Index (SneakersApp)" in 81.5788ms
+2019-05-01 14:04:07.017 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 14:04:07.027 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.CollectionController.Index (SneakersApp)"'
+2019-05-01 14:04:07.031 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 14:04:07.298 +02:00 [Information] Request finished in 33.8933ms 304 text/css
+2019-05-01 14:04:07.305 +02:00 [Information] Request finished in 365.8022ms 200 text/html; charset=utf-8
+2019-05-01 14:04:08.187 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Collection/Detail/3  
+2019-05-01 14:04:08.194 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:04:08.208 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Collection\"}". Executing action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"
+2019-05-01 14:04:08.217 +02:00 [Information] Executing action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" with arguments (["3"]) - Validation state: Valid
+2019-05-01 14:04:08.222 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:08.233 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Created], [c].[Description], [c].[Title], [c].[UserId]
+FROM [Collections] AS [c]"
+2019-05-01 14:04:08.248 +02:00 [Information] Executed action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 27.557ms.
+2019-05-01 14:04:08.251 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:04:08.294 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__id_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[CollectionID] = @__id_0"
+2019-05-01 14:04:08.319 +02:00 [Information] Executed ViewResult - view "Detail" executed in 47.2065ms.
+2019-05-01 14:04:08.370 +02:00 [Information] Executed action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" in 111.2823ms
+2019-05-01 14:04:08.400 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:04:08.860 +02:00 [Information] Request finished in 245.2124ms 200 text/html; charset=utf-8
+2019-05-01 14:04:12.729 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Detail/4  
+2019-05-01 14:04:12.759 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:04:12.777 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"
+2019-05-01 14:04:12.783 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" with arguments (["4"]) - Validation state: Valid
+2019-05-01 14:04:12.793 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:12.814 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:04:12.827 +02:00 [Information] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:04:12.834 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 47.1124ms.
+2019-05-01 14:04:12.839 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:04:12.953 +02:00 [Information] Executed ViewResult - view "Detail" executed in 12.3852ms.
+2019-05-01 14:04:13.078 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" in 186.9353ms
+2019-05-01 14:04:13.084 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:04:13.090 +02:00 [Information] Request finished in 366.5944ms 200 text/html; charset=utf-8
+2019-05-01 14:04:14.979 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Collection/Detail/3  
+2019-05-01 14:04:14.989 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:04:15.000 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Collection\"}". Executing action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"
+2019-05-01 14:04:15.015 +02:00 [Information] Executing action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" with arguments (["3"]) - Validation state: Valid
+2019-05-01 14:04:15.024 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:15.041 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Created], [c].[Description], [c].[Title], [c].[UserId]
+FROM [Collections] AS [c]"
+2019-05-01 14:04:15.050 +02:00 [Information] Executed action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 27.3319ms.
+2019-05-01 14:04:15.057 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:04:15.070 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__id_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[CollectionID] = @__id_0"
+2019-05-01 14:04:15.095 +02:00 [Information] Executed ViewResult - view "Detail" executed in 21.9077ms.
+2019-05-01 14:04:15.117 +02:00 [Information] Executed action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" in 105.6976ms
+2019-05-01 14:04:15.126 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:04:15.138 +02:00 [Information] Request finished in 153.0046ms 200 text/html; charset=utf-8
+2019-05-01 14:04:16.135 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Detail/7  
+2019-05-01 14:04:16.143 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:04:16.147 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"
+2019-05-01 14:04:16.150 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" with arguments (["7"]) - Validation state: Valid
+2019-05-01 14:04:16.154 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:16.166 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:04:16.178 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:04:16.183 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 29.2392ms.
+2019-05-01 14:04:16.188 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:04:16.222 +02:00 [Information] Executed ViewResult - view "Detail" executed in 5.826ms.
+2019-05-01 14:04:16.229 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" in 74.9939ms
+2019-05-01 14:04:16.233 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:04:16.238 +02:00 [Information] Request finished in 105.3561ms 200 text/html; charset=utf-8
+2019-05-01 14:04:17.545 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Collection/Detail/3  
+2019-05-01 14:04:17.549 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:04:17.555 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Collection\"}". Executing action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"
+2019-05-01 14:04:17.564 +02:00 [Information] Executing action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" with arguments (["3"]) - Validation state: Valid
+2019-05-01 14:04:17.569 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:17.583 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Created], [c].[Description], [c].[Title], [c].[UserId]
+FROM [Collections] AS [c]"
+2019-05-01 14:04:17.594 +02:00 [Information] Executed action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 19.3331ms.
+2019-05-01 14:04:17.599 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:04:17.611 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__id_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[CollectionID] = @__id_0"
+2019-05-01 14:04:17.674 +02:00 [Information] Executed ViewResult - view "Detail" executed in 18.0876ms.
+2019-05-01 14:04:17.683 +02:00 [Information] Executed action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" in 118.7209ms
+2019-05-01 14:04:17.690 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:04:17.696 +02:00 [Information] Request finished in 148.2235ms 200 text/html; charset=utf-8
+2019-05-01 14:04:22.120 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Collection/UserCollection  
+2019-05-01 14:04:22.140 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.CollectionController.Usercollection (SneakersApp)"'
+2019-05-01 14:04:22.180 +02:00 [Information] Route matched with "{action = \"Usercollection\", controller = \"Collection\"}". Executing action "SneakersApp.Controllers.CollectionController.Usercollection (SneakersApp)"
+2019-05-01 14:04:22.184 +02:00 [Information] Executing action method "SneakersApp.Controllers.CollectionController.Usercollection (SneakersApp)" - Validation state: Valid
+2019-05-01 14:04:22.225 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:22.237 +02:00 [Information] Executed action method "SneakersApp.Controllers.CollectionController.Usercollection (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 47.3277ms.
+2019-05-01 14:04:22.304 +02:00 [Information] Executing ViewResult, running view "Usercollection".
+2019-05-01 14:04:22.418 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [collection].[Id], [collection].[Created], [collection].[Description], [collection].[Title], [collection].[UserId]
+FROM [Collections] AS [collection]
+WHERE [collection].[UserId] = @__id_0"
+2019-05-01 14:04:22.454 +02:00 [Information] Executed ViewResult - view "Usercollection" executed in 185.6269ms.
+2019-05-01 14:04:22.959 +02:00 [Information] Executed action "SneakersApp.Controllers.CollectionController.Usercollection (SneakersApp)" in 275.3252ms
+2019-05-01 14:04:22.967 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.CollectionController.Usercollection (SneakersApp)"'
+2019-05-01 14:04:22.972 +02:00 [Information] Request finished in 899.278ms 200 text/html; charset=utf-8
+2019-05-01 14:04:23.851 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Collection/Detail/2  
+2019-05-01 14:04:23.861 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:04:23.867 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Collection\"}". Executing action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"
+2019-05-01 14:04:23.881 +02:00 [Information] Executing action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" with arguments (["2"]) - Validation state: Valid
+2019-05-01 14:04:23.887 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:23.901 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[Created], [c].[Description], [c].[Title], [c].[UserId]
+FROM [Collections] AS [c]"
+2019-05-01 14:04:23.908 +02:00 [Information] Executed action method "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 21.0009ms.
+2019-05-01 14:04:23.913 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:04:23.929 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__id_0='?' (Size = 4000)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[CollectionID] = @__id_0"
+2019-05-01 14:04:24.007 +02:00 [Information] Executed ViewResult - view "Detail" executed in 22.9209ms.
+2019-05-01 14:04:24.094 +02:00 [Information] Executed action "SneakersApp.Controllers.CollectionController.Detail (SneakersApp)" in 152.9926ms
+2019-05-01 14:04:24.099 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.CollectionController.Detail (SneakersApp)"'
+2019-05-01 14:04:24.108 +02:00 [Information] Request finished in 258.1591ms 200 text/html; charset=utf-8
+2019-05-01 14:04:31.446 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Usershoe  
+2019-05-01 14:04:31.464 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 14:04:31.482 +02:00 [Information] Route matched with "{action = \"Usershoe\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)"
+2019-05-01 14:04:31.488 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)" - Validation state: Valid
+2019-05-01 14:04:31.497 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:31.501 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 9.9734ms.
+2019-05-01 14:04:31.640 +02:00 [Information] Executing ViewResult, running view "Usershoe".
+2019-05-01 14:04:31.846 +02:00 [Information] Executed DbCommand ("28"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[UserId] = @__id_0"
+2019-05-01 14:04:31.869 +02:00 [Information] Executed ViewResult - view "Usershoe" executed in 363.2771ms.
+2019-05-01 14:04:31.976 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)" in 386.6489ms
+2019-05-01 14:04:31.991 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 14:04:31.991 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 14:04:32.050 +02:00 [Information] Request finished in 552.3724ms 200 text/html; charset=utf-8
+2019-05-01 14:04:32.054 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 14:04:32.388 +02:00 [Information] Request finished in 78.5494ms 304 text/css
+2019-05-01 14:04:33.101 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Detail/1  
+2019-05-01 14:04:33.105 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:04:33.109 +02:00 [Information] Route matched with "{action = \"Detail\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"
+2019-05-01 14:04:33.114 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" with arguments (["1"]) - Validation state: Valid
+2019-05-01 14:04:33.118 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:33.131 +02:00 [Information] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 14:04:33.145 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 14:04:33.153 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 35.2668ms.
+2019-05-01 14:04:33.156 +02:00 [Information] Executing ViewResult, running view "Detail".
+2019-05-01 14:04:33.212 +02:00 [Information] Executed ViewResult - view "Detail" executed in 4.3181ms.
+2019-05-01 14:04:33.218 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Detail (SneakersApp)" in 103.6928ms
+2019-05-01 14:04:33.228 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Detail (SneakersApp)"'
+2019-05-01 14:04:33.251 +02:00 [Information] Request finished in 143.6928ms 200 text/html; charset=utf-8
+2019-05-01 14:04:35.410 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Usershoe  
+2019-05-01 14:04:35.420 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 14:04:35.423 +02:00 [Information] Route matched with "{action = \"Usershoe\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)"
+2019-05-01 14:04:35.427 +02:00 [Information] Executing action method "SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)" - Validation state: Valid
+2019-05-01 14:04:35.432 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 14:04:35.436 +02:00 [Information] Executed action method "SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.7481ms.
+2019-05-01 14:04:35.440 +02:00 [Information] Executing ViewResult, running view "Usershoe".
+2019-05-01 14:04:35.452 +02:00 [Information] Executed DbCommand ("7"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[UserId] = @__id_0"
+2019-05-01 14:04:35.484 +02:00 [Information] Executed ViewResult - view "Usershoe" executed in 17.2075ms.
+2019-05-01 14:04:35.541 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)" in 60.8726ms
+2019-05-01 14:04:35.546 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 14:04:35.613 +02:00 [Information] Request finished in 140.1583ms 200 text/html; charset=utf-8
