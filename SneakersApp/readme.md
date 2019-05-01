@@ -8,6 +8,8 @@
 	- Models : Contient les models pour nos views
 	- Views : Contient les fichiers front
 	- Appsettings : Contient notre connection string dans laquelle sera push les éléments sensibles d'une chaine de connexion.
+    - Handlers : Contient les task de logique des claims
+    - Requirements : Contients les "models" des claims
 - SneakersApp.Data : Models
 	- Models : Les models utilisés pour communiquer les informations entre les services et le web project
 	- IColllection : interface définissant les methods utilisés dans le service Collection
