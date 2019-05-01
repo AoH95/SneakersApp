@@ -2,12 +2,88 @@
 for details on configuring this project to bundle and minify static web assets. */
 
 
+/*Menu deroulant
+-------------------------------------------------- */
+
+.menu-deroulant {
+    position:relative;
+    width:140px;
+}
+
+.menu-deroulant:hover ul{
+    visibility:visible;
+    opacity:1;
+    transition:0.2s ease-in;
+}
+
+.menu-deroulant p {
+    text-align:center;
+    margin-bottom:5px;
+}
+
+.menu-deroulant ul {
+    width:100%;
+    visibility: hidden;
+    opacity:0;
+    background: #fff;
+    list-style: none;
+    padding: 14px;
+    transition: 0.2s ease-out;
+    position:absolute;
+    box-shadow: 0px 10px 18px rgba(0,0,0,0.2);
+    z-index: 110;
+}
+
+.menu-deroulant ul li{
+    width: 100%;
+    color: #333;
+}
+
+.menu-deroulant ul li:hover {
+    font-weight:500;
+    color: #000;
+}
+
+.menu-deroulant ul li a {
+    width:100%;
+    display:block;
+    margin: 14px 0;
+    text-align:center;
+    cursor:pointer;
+}
+
+
+
 /*Detail shoes
 -------------------------------------------------- */
+.shoes_img_container img {
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.shoes_infos_container h1{
+    text-transform:uppercase;
+}
+
+.shoes_infos_container p {
+    margin-bottom: 20px;
+    color:#888;
+}
+
+.shoes_description_container{
+    margin:16px 0 50px 0;
+}
+
+.shoes_description_container h2{
+    border-bottom: 1px solid #aaa;
+    margin-bottom:30px;
+    padding: 14px 0;
+}
+
+
 
 /*Card shoes
 -------------------------------------------------- */
-
 .shoes-content {
     padding: 24px;
 }
