@@ -4,7 +4,7 @@
     <div class="shoes-content">
         @foreach(var collection in Model.Collection)
         {
-            <a asp-controller="Collection" asp-action="Detail" asp-route-id="@collection.Id">
+            <a asp-controller="Collection" asp-action="Detail" asp-route-id="@collection.Id" class="shoes-item col-md-6 col-lg-4">
                 @collection.Title
             </a>
         }

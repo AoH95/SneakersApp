@@ -5,13 +5,13 @@
         @if(Model.Collection.Any()){
             @foreach(var collection in Model.Collection)
         {
-        <a asp-controller="Collection" asp-action="Detail" asp-route-id="@collection.Id">
+        <a asp-controller="Collection" asp-action="Detail" asp-route-id="@collection.Id" class="shoes-item col-md-6 col-lg-4">
             @collection.Title
         </a>
         }
         }else{
                  <p>You have 0 created collections.</p>
-                <a asp-controller="Collection" asp-action="Create">Create your first collection !</a>
+                <a asp-controller="Collection" asp-action="Create" class="btn btn-primary">Create your first collection !</a>
         }
         
     </div>

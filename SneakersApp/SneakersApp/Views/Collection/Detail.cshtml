@@ -4,7 +4,7 @@
         <div class="shoes_infos_container">
             <p>Name: @Model.Title</p>
         </div>
-        <a asp-controller="Collection" asp-action="Index">Back to home</a>
+        <a asp-controller="Collection" asp-action="Index" class="btn btn-primary">Back to home</a>
         @foreach (var shoes in Model.Shoes)
         {
             <a asp-controller="Shoe" asp-action="Detail" asp-route-id="@shoes.Id">
