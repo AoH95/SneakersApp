@@ -18,6 +18,9 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using SneakersApp.Data.Models;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Routing;
+using Microsoft.IdentityModel.Tokens;
+using SneakersApp.Models;
+using System.Text;
 
 namespace SneakersApp
 {
@@ -61,8 +64,7 @@ namespace SneakersApp
             );
 
             services.AddIdentity<User, IdentityRole>()
-                .AddEntityFrameworkStores<SneakersAppDbContext>()
-                .AddDefaultTokenProviders();
+                .AddEntityFrameworkStores<SneakersAppDbContext>();
 
             services.Configure<IdentityOptions>(options =>
             {
@@ -99,6 +101,19 @@ namespace SneakersApp
             services.AddScoped<IShoe, ShoesService>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddAuthentication()
+                .AddCookie(cfg => cfg.SlidingExpiration = true)
+                .AddJwtBearer(cfg =>
+                {
+                    cfg.TokenValidationParameters = new TokenValidationParameters()
+                    {
+                        ValidIssuer = SneakersJWTTokens.Issuer,
+                        ValidAudience = SneakersJWTTokens.Audience,
+                        IssuerSigningKey =
+                            new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SneakersJWTTokens.Key))
+                    };
+                });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

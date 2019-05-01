@@ -7,6 +7,10 @@ using SneakersApp.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SneakersApp.Data.Models;
+using System.Text;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace SneakersApp.Controllers
 {
@@ -94,6 +98,46 @@ namespace SneakersApp.Controllers
         {
             await signInManager.SignOutAsync();
             return RedirectToAction("index", "home");
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CreateToken([FromBody] JWTTokenViewModel model)
+        {
+            if (ModelState.IsValid)
+            {
+                User user = await userManager.FindByNameAsync(model.UserName);
+                var signInResult = await signInManager.CheckPasswordSignInAsync(user, model.Password, false);
+                if (signInResult.Succeeded)
+                {
+                    var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(SneakersJWTTokens.Key));
+                    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+                    var claims = new[]
+                    {
+                        new Claim(JwtRegisteredClaimNames.Sub, model.UserName),
+                        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                        new Claim(JwtRegisteredClaimNames.UniqueName, model.UserName)
+                    };
+                    var token = new JwtSecurityToken(
+                            SneakersJWTTokens.Issuer,
+                            SneakersJWTTokens.Audience,
+                            claims,
+                            expires: DateTime.UtcNow.AddMinutes(30),
+                            signingCredentials: creds
+                        );
+
+                    var result = new
+                    {
+                        token = new JwtSecurityTokenHandler().WriteToken(token),
+                        expiration = token.ValidTo
+                    };
+                    return Created("", result);
+                }
+                else
+                {
+                    return BadRequest();
+                }
+            }
+            return BadRequest();
         }
     }
 }

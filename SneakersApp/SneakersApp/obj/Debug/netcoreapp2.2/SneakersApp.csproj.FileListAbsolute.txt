@@ -228,7 +228,6 @@ C:\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Share
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_AuthenticationPartial.g.cshtml.cs
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutForm.g.cshtml.cs
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_MessagePartial.g.cshtml.cs
-<<<<<<< HEAD
 D:\doc\SneakersApp\SneakersApp\SneakersApp\bin\Debug\netcoreapp2.2\SneakersApp.deps.json
 D:\doc\SneakersApp\SneakersApp\SneakersApp\bin\Debug\netcoreapp2.2\SneakersApp.runtimeconfig.json
 D:\doc\SneakersApp\SneakersApp\SneakersApp\bin\Debug\netcoreapp2.2\SneakersApp.runtimeconfig.dev.json
@@ -275,24 +274,7 @@ D:\doc\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.V
 D:\doc\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.csproj.CopyComplete
 D:\doc\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.dll
 D:\doc\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\SneakersApp.pdb
-=======
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shoe\Usershoe.g.cshtml.cs
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Collection\Create.g.cshtml.cs
-<<<<<<< HEAD
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Collection\Update.g.cshtml.cs
 \\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Collection\Usercollection.g.cshtml.cs
-=======
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Collection\Create.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Collection\Detail.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Collection\Index.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Dashboard\Index.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Shared\_LayoutAdmin.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Shoes\Create.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Shoes\Detail.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Shoes\Index.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Shoes\Update.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\Shoes\Usershoe.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\_ViewImports.g.cshtml.cs
-\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Areas\Administration\Views\_ViewStart.g.cshtml.cs
->>>>>>> master
->>>>>>> fc8361bfc5243fd6c43421c552453425ee571165
+\\Mac\Home\Documents\DOTNET\SneakersApp\SneakersApp\SneakersApp\obj\Debug\netcoreapp2.2\Razor\Views\Shoe\Usershoe.g.cshtml.cs
