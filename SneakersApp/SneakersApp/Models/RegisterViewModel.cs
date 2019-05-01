@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Mvc.Rendering;
+using SneakersApp.Data.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -37,6 +39,15 @@ namespace SneakersApp.Models
         [DataType(DataType.Date)]
         //[Age(18, ErrorMessage = "Vous devez avoir {1} ans")]
         public DateTime BirthDate { get; set; }
+
+        [Display(Name = "Role")]
+        public string RoleSelected { get; set; }
+
+        public List<SelectListItem> Roles { get; }
+            = Role.Roles
+            .Select(role => new SelectListItem { Value = role, Text = role })
+            .ToList();
+
 
     }
 }

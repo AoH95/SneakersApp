@@ -5300,3 +5300,1000 @@ WHERE [shoe].[UserId] = @__id_0"
 2019-05-01 18:39:53.519 +02:00 [Information] Executed action "SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)" in 74.962ms
 2019-05-01 18:39:53.524 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.ShoeController.Usershoe (SneakersApp)"'
 2019-05-01 18:39:53.531 +02:00 [Information] Request finished in 100.2621ms 200 text/html; charset=utf-8
+2019-05-01 18:51:29.762 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 18:51:30.367 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 18:51:30.751 +02:00 [Information] Executed DbCommand ("36"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[Firstname], [e].[Lastname], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2019-05-01 18:51:30.896 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2019-05-01 18:51:30.953 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2019-05-01 18:51:31.012 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:51:31.027 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 18:51:31.044 +02:00 [Information] Authorization failed.
+2019-05-01 18:51:31.052 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 18:51:31.063 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 18:51:31.076 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 18:51:31.083 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 48.8038ms
+2019-05-01 18:51:31.088 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:51:31.132 +02:00 [Information] Request finished in 1370.6054ms 302 
+2019-05-01 18:51:31.133 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied?ReturnUrl=%2F  
+2019-05-01 18:51:31.189 +02:00 [Information] Request finished in 59.1297ms 404 
+2019-05-01 18:51:46.269 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 18:51:46.274 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:51:46.279 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 18:51:46.289 +02:00 [Information] Authorization failed.
+2019-05-01 18:51:46.294 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 18:51:46.298 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 18:51:46.303 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 18:51:46.307 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 23.5391ms
+2019-05-01 18:51:46.311 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:51:46.316 +02:00 [Information] Request finished in 48.5727ms 302 
+2019-05-01 18:51:46.321 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied?ReturnUrl=%2F  
+2019-05-01 18:51:46.333 +02:00 [Information] Request finished in 8.6232ms 404 
+2019-05-01 18:53:21.569 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 18:53:21.967 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:53:21.982 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 18:53:21.999 +02:00 [Information] Authorization failed.
+2019-05-01 18:53:22.007 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 18:53:22.017 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 18:53:22.028 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 18:53:22.035 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 45.6692ms
+2019-05-01 18:53:22.039 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:53:22.065 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied?ReturnUrl=%2F  
+2019-05-01 18:53:22.070 +02:00 [Information] Request finished in 505.5773ms 302 
+2019-05-01 18:53:22.128 +02:00 [Information] Request finished in 63.1547ms 404 
+2019-05-01 18:53:55.913 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 18:53:55.917 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:53:55.922 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 18:53:55.930 +02:00 [Information] Authorization failed.
+2019-05-01 18:53:55.933 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 18:53:55.937 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 18:53:55.941 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 18:53:55.944 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 18.7946ms
+2019-05-01 18:53:55.948 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:53:55.952 +02:00 [Information] Request finished in 39.8646ms 302 
+2019-05-01 18:53:55.961 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied?ReturnUrl=%2F  
+2019-05-01 18:53:55.969 +02:00 [Information] Request finished in 7.8167ms 404 
+2019-05-01 18:56:04.767 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 18:56:05.143 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:56:05.157 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 18:56:05.174 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 18:56:05.183 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.8264ms.
+2019-05-01 18:56:05.216 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 18:56:05.432 +02:00 [Information] Executed ViewResult - view "Index" executed in 235.0477ms.
+2019-05-01 18:56:05.437 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 275.8927ms
+2019-05-01 18:56:05.441 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 18:56:05.458 +02:00 [Information] Request finished in 691.0271ms 200 text/html; charset=utf-8
+2019-05-01 18:56:05.492 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2019-05-01 18:56:05.500 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-05-01 18:56:05.505 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 18:56:05.511 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.css  
+2019-05-01 18:56:05.513 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/jquery/dist/jquery.js  
+2019-05-01 18:56:05.551 +02:00 [Information] Sending file. Request path: '"/css/site.css"'. Physical path: '"C:\SneakersApp\SneakersApp\SneakersApp\wwwroot\css\site.css"'
+2019-05-01 18:56:05.552 +02:00 [Information] Sending file. Request path: '"/js/site.js"'. Physical path: '"C:\SneakersApp\SneakersApp\SneakersApp\wwwroot\js\site.js"'
+2019-05-01 18:56:05.562 +02:00 [Information] Request finished in 96.3414ms 200 text/css
+2019-05-01 18:56:05.564 +02:00 [Information] Request finished in 97.4847ms 200 application/javascript
+2019-05-01 18:56:05.573 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/css/bootstrap.css"'. Physical path: '"C:\SneakersApp\SneakersApp\SneakersApp\wwwroot\lib\bootstrap\dist\css\bootstrap.css"'
+2019-05-01 18:56:05.579 +02:00 [Information] Request finished in 82.6734ms 200 text/css
+2019-05-01 18:56:05.598 +02:00 [Information] Sending file. Request path: '"/lib/bootstrap/dist/js/bootstrap.bundle.js"'. Physical path: '"C:\SneakersApp\SneakersApp\SneakersApp\wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js"'
+2019-05-01 18:56:05.602 +02:00 [Information] Request finished in 107.2021ms 200 application/javascript
+2019-05-01 18:56:05.612 +02:00 [Information] Sending file. Request path: '"/lib/jquery/dist/jquery.js"'. Physical path: '"C:\SneakersApp\SneakersApp\SneakersApp\wwwroot\lib\jquery\dist\jquery.js"'
+2019-05-01 18:56:05.616 +02:00 [Information] Request finished in 123.6812ms 200 application/javascript
+2019-05-01 19:01:37.779 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:01:38.211 +02:00 [Information] Executed DbCommand ("26"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:01:38.273 +02:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:01:38.282 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:01:38.382 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:01:38.494 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:01:38.508 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:01:38.527 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:01:38.536 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7223ms.
+2019-05-01 19:01:38.566 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:01:38.777 +02:00 [Information] Executed ViewResult - view "Index" executed in 225.1131ms.
+2019-05-01 19:01:38.782 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 268.8717ms
+2019-05-01 19:01:38.790 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:01:38.835 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/jquery/dist/jquery.js  
+2019-05-01 19:01:38.840 +02:00 [Information] Request finished in 420.3411ms 200 text/html; charset=utf-8
+2019-05-01 19:01:38.841 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 19:01:38.843 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.css  
+2019-05-01 19:01:38.852 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2019-05-01 19:01:38.857 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-05-01 19:01:38.878 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 19:01:38.880 +02:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2019-05-01 19:01:38.888 +02:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2019-05-01 19:01:38.889 +02:00 [Information] The file "/js/site.js" was not modified
+2019-05-01 19:01:38.894 +02:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.bundle.js" was not modified
+2019-05-01 19:01:38.911 +02:00 [Information] Request finished in 74.2819ms 304 application/javascript
+2019-05-01 19:01:38.912 +02:00 [Information] Request finished in 70.4105ms 304 text/css
+2019-05-01 19:01:38.930 +02:00 [Information] Request finished in 90.2785ms 304 text/css
+2019-05-01 19:01:38.931 +02:00 [Information] Request finished in 68.4937ms 304 application/javascript
+2019-05-01 19:01:38.939 +02:00 [Information] Request finished in 65.9025ms 304 application/javascript
+2019-05-01 19:04:23.293 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:04:23.679 +02:00 [Information] Executed DbCommand ("38"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:04:23.743 +02:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:04:23.759 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:04:23.867 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:04:23.978 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:04:23.993 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:04:24.012 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:04:24.021 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6795ms.
+2019-05-01 19:04:24.051 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:04:24.260 +02:00 [Information] Executed ViewResult - view "Index" executed in 224.147ms.
+2019-05-01 19:04:24.265 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 267.5338ms
+2019-05-01 19:04:24.269 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:04:24.282 +02:00 [Information] Request finished in 414.15ms 200 text/html; charset=utf-8
+2019-05-01 19:04:24.309 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/jquery/dist/jquery.js  
+2019-05-01 19:04:24.311 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 19:04:24.348 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.css  
+2019-05-01 19:04:24.371 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-05-01 19:04:24.380 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2019-05-01 19:04:24.406 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 19:04:24.409 +02:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2019-05-01 19:04:24.412 +02:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2019-05-01 19:04:24.414 +02:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.bundle.js" was not modified
+2019-05-01 19:04:24.419 +02:00 [Information] The file "/js/site.js" was not modified
+2019-05-01 19:04:24.438 +02:00 [Information] Request finished in 134.6529ms 304 text/css
+2019-05-01 19:04:24.440 +02:00 [Information] Request finished in 134.6874ms 304 application/javascript
+2019-05-01 19:04:24.446 +02:00 [Information] Request finished in 114.3159ms 304 application/javascript
+2019-05-01 19:04:24.448 +02:00 [Information] Request finished in 115.2803ms 304 text/css
+2019-05-01 19:04:24.454 +02:00 [Information] Request finished in 81.0213ms 304 application/javascript
+2019-05-01 19:04:30.033 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Logout  
+2019-05-01 19:04:30.044 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)"'
+2019-05-01 19:04:30.069 +02:00 [Information] Route matched with "{action = \"Logout\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)"
+2019-05-01 19:04:30.074 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)" - Validation state: Valid
+2019-05-01 19:04:30.091 +02:00 [Information] AuthenticationScheme: "Identity.Application" signed out.
+2019-05-01 19:04:30.096 +02:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2019-05-01 19:04:30.101 +02:00 [Information] AuthenticationScheme: "Identity.TwoFactorUserId" signed out.
+2019-05-01 19:04:30.106 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 27.7331ms.
+2019-05-01 19:04:30.117 +02:00 [Information] Executing RedirectResult, redirecting to "/".
+2019-05-01 19:04:30.122 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)" in 48.2587ms
+2019-05-01 19:04:30.127 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)"'
+2019-05-01 19:04:30.136 +02:00 [Information] Request finished in 99.2387ms 302 
+2019-05-01 19:04:30.139 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:04:30.145 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:04:30.150 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:04:30.155 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:04:30.160 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0836ms.
+2019-05-01 19:04:30.166 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:04:30.186 +02:00 [Information] Executed ViewResult - view "Index" executed in 16.5473ms.
+2019-05-01 19:04:30.191 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 35.2069ms
+2019-05-01 19:04:30.195 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:04:30.200 +02:00 [Information] Request finished in 60.4045ms 200 text/html; charset=utf-8
+2019-05-01 19:04:31.177 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Register  
+2019-05-01 19:04:31.185 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"'
+2019-05-01 19:04:31.191 +02:00 [Information] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"
+2019-05-01 19:04:31.196 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)" - Validation state: Valid
+2019-05-01 19:04:31.202 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.5486ms.
+2019-05-01 19:04:31.210 +02:00 [Information] Executing ViewResult, running view "Register".
+2019-05-01 19:04:31.327 +02:00 [Information] Executed ViewResult - view "Register" executed in 118.2627ms.
+2019-05-01 19:04:31.337 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)" in 136.8219ms
+2019-05-01 19:04:31.338 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 19:04:31.343 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 19:04:31.344 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"'
+2019-05-01 19:04:31.349 +02:00 [Information] Request finished in 172.1739ms 200 text/html; charset=utf-8
+2019-05-01 19:04:31.378 +02:00 [Information] Request finished in 40.1188ms 404 
+2019-05-01 19:04:31.379 +02:00 [Information] Request finished in 41.1595ms 404 
+2019-05-01 19:13:53.373 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:13:53.793 +02:00 [Information] Executed DbCommand ("35"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:13:53.859 +02:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:13:53.877 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:13:53.977 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:13:54.063 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:13:54.080 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:13:54.102 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:13:54.111 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.8643ms.
+2019-05-01 19:13:54.140 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:13:54.362 +02:00 [Information] Executed ViewResult - view "Index" executed in 235.8452ms.
+2019-05-01 19:13:54.367 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 282.1824ms
+2019-05-01 19:13:54.371 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:13:54.431 +02:00 [Information] Request finished in 405.0646ms 200 text/html; charset=utf-8
+2019-05-01 19:13:54.436 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-05-01 19:13:54.437 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.css  
+2019-05-01 19:13:54.441 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2019-05-01 19:13:54.452 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/jquery/dist/jquery.js  
+2019-05-01 19:13:54.454 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 19:13:54.472 +02:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.bundle.js" was not modified
+2019-05-01 19:13:54.478 +02:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2019-05-01 19:13:54.492 +02:00 [Information] The file "/js/site.js" was not modified
+2019-05-01 19:13:54.494 +02:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2019-05-01 19:13:54.496 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 19:13:54.521 +02:00 [Information] Request finished in 99.9117ms 304 application/javascript
+2019-05-01 19:13:54.523 +02:00 [Information] Request finished in 101.2558ms 304 text/css
+2019-05-01 19:13:54.529 +02:00 [Information] Request finished in 98.9628ms 304 application/javascript
+2019-05-01 19:13:54.532 +02:00 [Information] Request finished in 71.5331ms 304 application/javascript
+2019-05-01 19:13:54.536 +02:00 [Information] Request finished in 61.1538ms 304 text/css
+2019-05-01 19:13:58.040 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Login  
+2019-05-01 19:13:58.052 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:13:58.066 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"
+2019-05-01 19:13:58.072 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" - Validation state: Valid
+2019-05-01 19:13:58.077 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3945ms.
+2019-05-01 19:13:58.086 +02:00 [Information] Executing ViewResult, running view "Login".
+2019-05-01 19:13:58.177 +02:00 [Information] Executed ViewResult - view "Login" executed in 90.3869ms.
+2019-05-01 19:13:58.186 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" in 112.1679ms
+2019-05-01 19:13:58.189 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 19:13:58.191 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 19:13:58.195 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:13:58.200 +02:00 [Information] Request finished in 160.5469ms 200 text/html; charset=utf-8
+2019-05-01 19:13:58.229 +02:00 [Information] Request finished in 46.1983ms 404 
+2019-05-01 19:13:58.233 +02:00 [Information] Request finished in 49.0172ms 404 
+2019-05-01 19:14:20.473 +02:00 [Information] Request starting HTTP/2.0 POST https://localhost:44321/Account/Login application/x-www-form-urlencoded 259
+2019-05-01 19:14:20.480 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:14:20.506 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"
+2019-05-01 19:14:20.571 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" with arguments (["SneakersApp.Models.LoginViewModel", ""]) - Validation state: Valid
+2019-05-01 19:14:20.590 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:14:20.620 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[Firstname], [u].[Lastname], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2019-05-01 19:14:20.638 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 61.5072ms.
+2019-05-01 19:14:20.649 +02:00 [Information] Executing ViewResult, running view "Login".
+2019-05-01 19:14:20.663 +02:00 [Information] Executed ViewResult - view "Login" executed in 10.0181ms.
+2019-05-01 19:14:20.678 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 19:14:20.680 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" in 158.9964ms
+2019-05-01 19:14:20.682 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 19:14:20.691 +02:00 [Information] Request finished in 14.2075ms 404 
+2019-05-01 19:14:20.693 +02:00 [Information] Request finished in 11.2749ms 404 
+2019-05-01 19:14:20.698 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:14:20.707 +02:00 [Information] Request finished in 233.673ms 200 text/html; charset=utf-8
+2019-05-01 19:14:23.775 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Register  
+2019-05-01 19:14:23.779 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"'
+2019-05-01 19:14:23.786 +02:00 [Information] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"
+2019-05-01 19:14:23.790 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)" - Validation state: Valid
+2019-05-01 19:14:23.795 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.375ms.
+2019-05-01 19:14:23.807 +02:00 [Information] Executing ViewResult, running view "Register".
+2019-05-01 19:14:23.877 +02:00 [Information] Executed ViewResult - view "Register" executed in 73.3175ms.
+2019-05-01 19:14:23.884 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 19:14:23.886 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 19:14:23.890 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)" in 92.1382ms
+2019-05-01 19:14:23.900 +02:00 [Information] Request finished in 13.0304ms 404 
+2019-05-01 19:14:23.902 +02:00 [Information] Request finished in 13.0532ms 404 
+2019-05-01 19:14:23.907 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"'
+2019-05-01 19:14:23.911 +02:00 [Information] Request finished in 136.5603ms 200 text/html; charset=utf-8
+2019-05-01 19:14:44.841 +02:00 [Information] Request starting HTTP/2.0 POST https://localhost:44321/Account/Register application/x-www-form-urlencoded 328
+2019-05-01 19:14:44.845 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"'
+2019-05-01 19:14:44.862 +02:00 [Information] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"
+2019-05-01 19:14:44.875 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)" with arguments (["SneakersApp.Models.RegisterViewModel"]) - Validation state: Valid
+2019-05-01 19:14:44.923 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:14:44.957 +02:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[Firstname], [u].[Lastname], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedUserName] = @__normalizedUserName_0"
+2019-05-01 19:14:44.989 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [u].[Id], [u].[AccessFailedCount], [u].[ConcurrencyStamp], [u].[Email], [u].[EmailConfirmed], [u].[Firstname], [u].[Lastname], [u].[LockoutEnabled], [u].[LockoutEnd], [u].[NormalizedEmail], [u].[NormalizedUserName], [u].[PasswordHash], [u].[PhoneNumber], [u].[PhoneNumberConfirmed], [u].[SecurityStamp], [u].[TwoFactorEnabled], [u].[UserName]
+FROM [AspNetUsers] AS [u]
+WHERE [u].[NormalizedEmail] = @__normalizedEmail_0"
+2019-05-01 19:14:45.129 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (Size = 50), @p6='?' (Size = 50), @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTimeOffset), @p9='?' (Size = 256), @p10='?' (Size = 256), @p11='?' (Size = 4000), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 4000), @p15='?' (DbType = Boolean), @p16='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [Firstname], [Lastname], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16);"
+2019-05-01 19:14:45.202 +02:00 [Information] Executed DbCommand ("13"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2019-05-01 19:14:45.224 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedRoleName_0"
+2019-05-01 19:14:45.359 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)" in 492.5424ms
+2019-05-01 19:14:45.363 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"'
+2019-05-01 19:14:45.433 +02:00 [Error] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Role $EIGNEUR1 does not exist.
+   at Microsoft.AspNetCore.Identity.EntityFrameworkCore.UserStore`9.AddToRoleAsync(TUser user, String normalizedRoleName, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at SneakersApp.Controllers.API.AccountController.Register(RegisterViewModel model) in C:\SneakersApp\SneakersApp\SneakersApp\Controllers\API\AccountController.cs:line 56
+   at Microsoft.AspNetCore.Mvc.Internal.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeNextActionFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.InvokeInnerFilterAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeNextResourceFilter()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeFilterPipelineAsync()
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.InvokeAsync()
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Routing.EndpointRoutingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2019-05-01 19:14:45.503 +02:00 [Information] Request finished in 660.5921ms 500 text/html; charset=utf-8
+2019-05-01 19:15:55.638 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:15:56.049 +02:00 [Information] Executed DbCommand ("34"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:15:56.117 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:15:56.136 +02:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:15:56.243 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:15:56.369 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:15:56.384 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:15:56.404 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:15:56.412 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.8379ms.
+2019-05-01 19:15:56.441 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:15:56.646 +02:00 [Information] Executed ViewResult - view "Index" executed in 218.9863ms.
+2019-05-01 19:15:56.650 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 262.2541ms
+2019-05-01 19:15:56.654 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:15:56.667 +02:00 [Information] Request finished in 423.7877ms 200 text/html; charset=utf-8
+2019-05-01 19:16:03.822 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Create  
+2019-05-01 19:16:03.842 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:16:03.877 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"
+2019-05-01 19:16:03.944 +02:00 [Information] Authorization failed.
+2019-05-01 19:16:03.952 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:16:03.962 +02:00 [Information] Executing ForbidResult with authentication schemes (["Identity.Application", "Bearer"]).
+2019-05-01 19:16:03.974 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 19:16:03.978 +02:00 [Information] AuthenticationScheme: "Bearer" was forbidden.
+2019-05-01 19:16:03.982 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" in 100.4978ms
+2019-05-01 19:16:03.986 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:16:03.993 +02:00 [Information] Request finished in 171.1413ms 403 
+2019-05-01 19:16:45.646 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/api//Shoe/Create  
+2019-05-01 19:16:45.678 +02:00 [Information] Request finished in 29.8546ms 404 
+2019-05-01 19:16:50.676 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Create  
+2019-05-01 19:16:50.684 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:16:50.691 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"
+2019-05-01 19:16:50.703 +02:00 [Information] Authorization failed.
+2019-05-01 19:16:50.708 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:16:50.713 +02:00 [Information] Executing ForbidResult with authentication schemes (["Identity.Application", "Bearer"]).
+2019-05-01 19:16:50.719 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 19:16:50.723 +02:00 [Information] AuthenticationScheme: "Bearer" was forbidden.
+2019-05-01 19:16:50.727 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" in 31.1819ms
+2019-05-01 19:16:50.731 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:16:50.741 +02:00 [Information] Request finished in 61.7626ms 403 
+2019-05-01 19:18:53.503 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:18:53.862 +02:00 [Information] Executed DbCommand ("27"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:18:53.928 +02:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:18:53.944 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:18:54.050 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:18:54.172 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:18:54.188 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:18:54.209 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:18:54.220 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.96ms.
+2019-05-01 19:18:54.249 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:18:54.459 +02:00 [Information] Executed ViewResult - view "Index" executed in 223.9196ms.
+2019-05-01 19:18:54.464 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 272.0071ms
+2019-05-01 19:18:54.469 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:18:54.488 +02:00 [Information] Request finished in 431.0796ms 200 text/html; charset=utf-8
+2019-05-01 19:18:54.512 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/jquery/dist/jquery.js  
+2019-05-01 19:18:54.535 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2019-05-01 19:18:54.537 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-05-01 19:18:54.544 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 19:18:54.545 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.css  
+2019-05-01 19:18:54.560 +02:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2019-05-01 19:18:54.570 +02:00 [Information] The file "/js/site.js" was not modified
+2019-05-01 19:18:54.574 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 19:18:54.577 +02:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.bundle.js" was not modified
+2019-05-01 19:18:54.581 +02:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2019-05-01 19:18:54.602 +02:00 [Information] Request finished in 86.5025ms 304 application/javascript
+2019-05-01 19:18:54.608 +02:00 [Information] Request finished in 89.828ms 304 application/javascript
+2019-05-01 19:18:54.642 +02:00 [Information] Request finished in 78.3519ms 304 application/javascript
+2019-05-01 19:18:54.652 +02:00 [Information] Request finished in 64.4522ms 304 text/css
+2019-05-01 19:18:54.666 +02:00 [Information] Request finished in 60.457ms 304 text/css
+2019-05-01 19:18:58.326 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Create  
+2019-05-01 19:18:58.336 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:18:58.350 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"
+2019-05-01 19:18:58.408 +02:00 [Information] Authorization was successful.
+2019-05-01 19:18:58.413 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" - Validation state: Valid
+2019-05-01 19:18:58.420 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:18:58.425 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 8.0787ms.
+2019-05-01 19:18:58.435 +02:00 [Information] Executing ViewResult, running view "Create".
+2019-05-01 19:18:58.461 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [collection].[Id], [collection].[Created], [collection].[Description], [collection].[Title], [collection].[UserId]
+FROM [Collections] AS [collection]
+WHERE [collection].[UserId] = @__id_0"
+2019-05-01 19:18:58.477 +02:00 [Information] Executed ViewResult - view "Create" executed in 41.8334ms.
+2019-05-01 19:18:58.482 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" in 127.4031ms
+2019-05-01 19:18:58.489 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:18:58.495 +02:00 [Information] Request finished in 166.9948ms 200 text/html; charset=utf-8
+2019-05-01 19:19:01.498 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Collection/Create  
+2019-05-01 19:19:01.505 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.CollectionController.Create (SneakersApp)"'
+2019-05-01 19:19:01.511 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Collection\"}". Executing action "SneakersApp.Controllers.API.CollectionController.Create (SneakersApp)"
+2019-05-01 19:19:01.515 +02:00 [Information] Authorization was successful.
+2019-05-01 19:19:01.520 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.CollectionController.Create (SneakersApp)" - Validation state: Valid
+2019-05-01 19:19:01.524 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.CollectionController.Create (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.2653ms.
+2019-05-01 19:19:01.532 +02:00 [Information] Executing ViewResult, running view "Create".
+2019-05-01 19:19:01.584 +02:00 [Information] Executed ViewResult - view "Create" executed in 52.8481ms.
+2019-05-01 19:19:01.588 +02:00 [Information] Executed action "SneakersApp.Controllers.API.CollectionController.Create (SneakersApp)" in 73.384ms
+2019-05-01 19:19:01.593 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.CollectionController.Create (SneakersApp)"'
+2019-05-01 19:19:01.597 +02:00 [Information] Request finished in 100.0085ms 200 text/html; charset=utf-8
+2019-05-01 19:19:04.494 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Create  
+2019-05-01 19:19:04.501 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:19:04.506 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"
+2019-05-01 19:19:04.510 +02:00 [Information] Authorization was successful.
+2019-05-01 19:19:04.515 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" - Validation state: Valid
+2019-05-01 19:19:04.520 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:19:04.524 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.2153ms.
+2019-05-01 19:19:04.529 +02:00 [Information] Executing ViewResult, running view "Create".
+2019-05-01 19:19:04.538 +02:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [collection].[Id], [collection].[Created], [collection].[Description], [collection].[Title], [collection].[UserId]
+FROM [Collections] AS [collection]
+WHERE [collection].[UserId] = @__id_0"
+2019-05-01 19:19:04.547 +02:00 [Information] Executed ViewResult - view "Create" executed in 14.9413ms.
+2019-05-01 19:19:04.551 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" in 41.1638ms
+2019-05-01 19:19:04.556 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:19:04.561 +02:00 [Information] Request finished in 66.27ms 200 text/html; charset=utf-8
+2019-05-01 19:19:11.202 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Usershoe  
+2019-05-01 19:19:11.209 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 19:19:11.217 +02:00 [Information] Route matched with "{action = \"Usershoe\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)"
+2019-05-01 19:19:11.222 +02:00 [Information] Authorization was successful.
+2019-05-01 19:19:11.226 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)" - Validation state: Valid
+2019-05-01 19:19:11.233 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:19:11.238 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 7.5203ms.
+2019-05-01 19:19:11.246 +02:00 [Information] Executing ViewResult, running view "Usershoe".
+2019-05-01 19:19:11.267 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[UserId] = @__id_0"
+2019-05-01 19:19:11.275 +02:00 [Information] Executed ViewResult - view "Usershoe" executed in 32.5678ms.
+2019-05-01 19:19:11.281 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)" in 58.6746ms
+2019-05-01 19:19:11.286 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 19:19:11.291 +02:00 [Information] Request finished in 98.7669ms 200 text/html; charset=utf-8
+2019-05-01 19:19:14.506 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Index  
+2019-05-01 19:19:14.512 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)"'
+2019-05-01 19:19:14.519 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)"
+2019-05-01 19:19:14.523 +02:00 [Information] Authorization was successful.
+2019-05-01 19:19:14.528 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:19:14.534 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:19:14.539 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 6.2328ms.
+2019-05-01 19:19:14.546 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:19:14.610 +02:00 [Information] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 19:19:14.670 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 19:19:14.697 +02:00 [Information] Executed ViewResult - view "Index" executed in 150.3273ms.
+2019-05-01 19:19:14.704 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)" in 178.4326ms
+2019-05-01 19:19:14.712 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)"'
+2019-05-01 19:19:14.717 +02:00 [Information] Request finished in 211.8568ms 200 text/html; charset=utf-8
+2019-05-01 19:19:18.578 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Usershoe  
+2019-05-01 19:19:18.582 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 19:19:18.587 +02:00 [Information] Route matched with "{action = \"Usershoe\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)"
+2019-05-01 19:19:18.591 +02:00 [Information] Authorization was successful.
+2019-05-01 19:19:18.595 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)" - Validation state: Valid
+2019-05-01 19:19:18.601 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:19:18.606 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.9523ms.
+2019-05-01 19:19:18.610 +02:00 [Information] Executing ViewResult, running view "Usershoe".
+2019-05-01 19:19:18.618 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[UserId] = @__id_0"
+2019-05-01 19:19:18.627 +02:00 [Information] Executed ViewResult - view "Usershoe" executed in 13.5091ms.
+2019-05-01 19:19:18.631 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)" in 40.1813ms
+2019-05-01 19:19:18.636 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 19:19:18.640 +02:00 [Information] Request finished in 62.7706ms 200 text/html; charset=utf-8
+2019-05-01 19:19:21.468 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Index  
+2019-05-01 19:19:21.473 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)"'
+2019-05-01 19:19:21.477 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)"
+2019-05-01 19:19:21.481 +02:00 [Information] Authorization was successful.
+2019-05-01 19:19:21.486 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:19:21.491 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:19:21.495 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 5.1452ms.
+2019-05-01 19:19:21.499 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:19:21.508 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img].[Id], [img].[CollectionID], [img].[Created], [img].[Description], [img].[Title], [img].[Url], [img].[UserId]
+FROM [Shoes] AS [img]
+ORDER BY [img].[Id]"
+2019-05-01 19:19:21.531 +02:00 [Information] Executed DbCommand ("18"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [img.Tags].[Id], [img.Tags].[Description], [img.Tags].[ShoesId]
+FROM [Tags] AS [img.Tags]
+INNER JOIN (
+    SELECT [img0].[Id]
+    FROM [Shoes] AS [img0]
+) AS [t] ON [img.Tags].[ShoesId] = [t].[Id]
+ORDER BY [t].[Id]"
+2019-05-01 19:19:21.540 +02:00 [Information] Executed ViewResult - view "Index" executed in 37.1818ms.
+2019-05-01 19:19:21.546 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)" in 62.7895ms
+2019-05-01 19:19:21.552 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Index (SneakersApp)"'
+2019-05-01 19:19:21.557 +02:00 [Information] Request finished in 88.82ms 200 text/html; charset=utf-8
+2019-05-01 19:19:29.959 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Usershoe  
+2019-05-01 19:19:29.964 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 19:19:29.969 +02:00 [Information] Route matched with "{action = \"Usershoe\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)"
+2019-05-01 19:19:29.973 +02:00 [Information] Authorization was successful.
+2019-05-01 19:19:29.977 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)" - Validation state: Valid
+2019-05-01 19:19:29.982 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:19:29.986 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 4.841ms.
+2019-05-01 19:19:29.990 +02:00 [Information] Executing ViewResult, running view "Usershoe".
+2019-05-01 19:19:29.997 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [shoe].[Id], [shoe].[CollectionID], [shoe].[Created], [shoe].[Description], [shoe].[Title], [shoe].[Url], [shoe].[UserId]
+FROM [Shoes] AS [shoe]
+WHERE [shoe].[UserId] = @__id_0"
+2019-05-01 19:19:30.003 +02:00 [Information] Executed ViewResult - view "Usershoe" executed in 12.6005ms.
+2019-05-01 19:19:30.008 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)" in 34.8772ms
+2019-05-01 19:19:30.013 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Usershoe (SneakersApp)"'
+2019-05-01 19:19:30.017 +02:00 [Information] Request finished in 58.9968ms 200 text/html; charset=utf-8
+2019-05-01 19:21:38.851 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:21:39.282 +02:00 [Information] Executed DbCommand ("36"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:21:39.345 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:21:39.361 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:21:39.460 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:21:39.542 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:21:39.578 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[Firstname], [e].[Lastname], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2019-05-01 19:21:39.685 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2019-05-01 19:21:39.743 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2019-05-01 19:21:39.803 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:21:39.818 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:21:39.834 +02:00 [Information] Authorization failed.
+2019-05-01 19:21:39.843 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:21:39.854 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 19:21:39.866 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 19:21:39.873 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 47.4884ms
+2019-05-01 19:21:39.877 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:21:39.920 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied?ReturnUrl=%2F  
+2019-05-01 19:21:39.920 +02:00 [Information] Request finished in 456.3457ms 302 
+2019-05-01 19:21:39.974 +02:00 [Information] Request finished in 58.2231ms 404 
+2019-05-01 19:38:33.913 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:38:34.280 +02:00 [Information] Executed DbCommand ("26"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:38:34.342 +02:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:38:34.350 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:38:34.452 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:38:34.564 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:38:34.578 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:38:34.595 +02:00 [Information] Authorization failed.
+2019-05-01 19:38:34.602 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:38:34.613 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 19:38:34.624 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 19:38:34.631 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 45.5782ms
+2019-05-01 19:38:34.635 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:38:34.660 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied?ReturnUrl=%2F  
+2019-05-01 19:38:34.665 +02:00 [Information] Request finished in 211.4369ms 302 
+2019-05-01 19:38:34.733 +02:00 [Information] Request finished in 72.262ms 404 
+2019-05-01 19:38:40.589 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account  
+2019-05-01 19:38:40.596 +02:00 [Information] Request finished in 7.6022ms 404 
+2019-05-01 19:38:45.440 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:38:45.445 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:38:45.451 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:38:45.457 +02:00 [Information] Authorization failed.
+2019-05-01 19:38:45.462 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:38:45.467 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 19:38:45.473 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 19:38:45.477 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 22.0365ms
+2019-05-01 19:38:45.482 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:38:45.488 +02:00 [Information] Request finished in 49.2852ms 302 
+2019-05-01 19:38:45.499 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied?ReturnUrl=%2F  
+2019-05-01 19:38:45.506 +02:00 [Information] Request finished in 8.0011ms 404 
+2019-05-01 19:40:21.306 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:40:21.640 +02:00 [Information] Executed DbCommand ("28"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:40:21.697 +02:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:40:21.705 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:40:21.804 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:40:21.928 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:40:21.942 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:40:21.959 +02:00 [Information] Authorization failed.
+2019-05-01 19:40:21.966 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:40:21.976 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 19:40:21.987 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 19:40:21.994 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 44.5347ms
+2019-05-01 19:40:21.998 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:40:22.026 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied?ReturnUrl=%2F  
+2019-05-01 19:40:22.026 +02:00 [Information] Request finished in 220.0191ms 302 
+2019-05-01 19:40:22.042 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:40:22.061 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"
+2019-05-01 19:40:22.079 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" - Validation state: Valid
+2019-05-01 19:40:22.088 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7824ms.
+2019-05-01 19:40:22.114 +02:00 [Information] Executing ViewResult, running view "Login".
+2019-05-01 19:40:22.364 +02:00 [Information] Executed ViewResult - view "Login" executed in 265.7023ms.
+2019-05-01 19:40:22.368 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" in 303.5361ms
+2019-05-01 19:40:22.372 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:40:22.387 +02:00 [Information] Request finished in 359.7501ms 200 text/html; charset=utf-8
+2019-05-01 19:40:22.408 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 19:40:22.415 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/jquery/dist/jquery.js  
+2019-05-01 19:40:22.417 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-05-01 19:40:22.419 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.css  
+2019-05-01 19:40:22.424 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2019-05-01 19:40:22.426 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 19:40:22.430 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 19:40:22.445 +02:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2019-05-01 19:40:22.446 +02:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.bundle.js" was not modified
+2019-05-01 19:40:22.450 +02:00 [Information] The file "/js/site.js" was not modified
+2019-05-01 19:40:22.453 +02:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2019-05-01 19:40:22.460 +02:00 [Information] Request finished in 43.7274ms 304 application/javascript
+2019-05-01 19:40:22.462 +02:00 [Information] Request finished in 45.1463ms 304 application/javascript
+2019-05-01 19:40:22.468 +02:00 [Information] Request finished in 65.4642ms 304 text/css
+2019-05-01 19:40:22.470 +02:00 [Information] Request finished in 47.343ms 304 application/javascript
+2019-05-01 19:40:22.472 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 19:40:22.476 +02:00 [Information] Request finished in 66.6375ms 304 text/css
+2019-05-01 19:40:22.494 +02:00 [Information] Request finished in 101.0152ms 404 
+2019-05-01 19:40:22.498 +02:00 [Information] Request finished in 80.1435ms 404 
+2019-05-01 19:40:24.946 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Logout  
+2019-05-01 19:40:24.952 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)"'
+2019-05-01 19:40:24.963 +02:00 [Information] Route matched with "{action = \"Logout\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)"
+2019-05-01 19:40:24.968 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)" - Validation state: Valid
+2019-05-01 19:40:24.982 +02:00 [Information] AuthenticationScheme: "Identity.Application" signed out.
+2019-05-01 19:40:24.986 +02:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2019-05-01 19:40:24.990 +02:00 [Information] AuthenticationScheme: "Identity.TwoFactorUserId" signed out.
+2019-05-01 19:40:24.994 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 21.8327ms.
+2019-05-01 19:40:25.001 +02:00 [Information] Executing RedirectResult, redirecting to "/".
+2019-05-01 19:40:25.006 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)" in 38.0992ms
+2019-05-01 19:40:25.009 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)"'
+2019-05-01 19:40:25.021 +02:00 [Information] Request finished in 67.7484ms 302 
+2019-05-01 19:40:25.024 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:40:25.028 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:40:25.033 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:40:25.037 +02:00 [Information] Authorization failed.
+2019-05-01 19:40:25.041 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:40:25.047 +02:00 [Information] Executing ChallengeResult with authentication schemes ([]).
+2019-05-01 19:40:25.055 +02:00 [Information] AuthenticationScheme: "Identity.Application" was challenged.
+2019-05-01 19:40:25.059 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 22.4045ms
+2019-05-01 19:40:25.063 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:40:25.068 +02:00 [Information] Request finished in 45.289ms 302 
+2019-05-01 19:40:25.072 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/login?ReturnUrl=%2F  
+2019-05-01 19:40:25.076 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:40:25.079 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"
+2019-05-01 19:40:25.084 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" - Validation state: Valid
+2019-05-01 19:40:25.087 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0968ms.
+2019-05-01 19:40:25.092 +02:00 [Information] Executing ViewResult, running view "Login".
+2019-05-01 19:40:25.111 +02:00 [Information] Executed ViewResult - view "Login" executed in 12.8284ms.
+2019-05-01 19:40:25.119 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 19:40:25.121 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 19:40:25.125 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" in 33.9231ms
+2019-05-01 19:40:25.131 +02:00 [Information] Request finished in 12.5335ms 404 
+2019-05-01 19:40:25.133 +02:00 [Information] Request finished in 12.5726ms 404 
+2019-05-01 19:40:25.137 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:40:25.141 +02:00 [Information] Request finished in 68.5023ms 200 text/html; charset=utf-8
+2019-05-01 19:40:27.312 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied  
+2019-05-01 19:40:27.316 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:40:27.320 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"
+2019-05-01 19:40:27.324 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" - Validation state: Valid
+2019-05-01 19:40:27.327 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0124ms.
+2019-05-01 19:40:27.331 +02:00 [Information] Executing ViewResult, running view "Login".
+2019-05-01 19:40:27.341 +02:00 [Information] Executed ViewResult - view "Login" executed in 5.7219ms.
+2019-05-01 19:40:27.349 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" in 21.1472ms
+2019-05-01 19:40:27.355 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 19:40:27.356 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:40:27.364 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 19:40:27.367 +02:00 [Information] Request finished in 49.359ms 200 text/html; charset=utf-8
+2019-05-01 19:40:27.368 +02:00 [Information] Request finished in 16.5697ms 404 
+2019-05-01 19:40:27.372 +02:00 [Information] Request finished in 17.199ms 404 
+2019-05-01 19:40:29.906 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Register  
+2019-05-01 19:40:29.909 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"'
+2019-05-01 19:40:29.915 +02:00 [Information] Route matched with "{action = \"Register\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"
+2019-05-01 19:40:29.919 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)" - Validation state: Valid
+2019-05-01 19:40:29.924 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 1.5457ms.
+2019-05-01 19:40:29.932 +02:00 [Information] Executing ViewResult, running view "Register".
+2019-05-01 19:40:29.998 +02:00 [Information] Executed ViewResult - view "Register" executed in 64.3703ms.
+2019-05-01 19:40:30.005 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 19:40:30.006 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Register (SneakersApp)" in 82.6864ms
+2019-05-01 19:40:30.008 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 19:40:30.014 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Register (SneakersApp)"'
+2019-05-01 19:40:30.015 +02:00 [Information] Request finished in 14.3895ms 404 
+2019-05-01 19:40:30.021 +02:00 [Information] Request finished in 112.681ms 200 text/html; charset=utf-8
+2019-05-01 19:40:30.023 +02:00 [Information] Request finished in 17.2077ms 404 
+2019-05-01 19:40:36.142 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Create  
+2019-05-01 19:40:36.147 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:40:36.153 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"
+2019-05-01 19:40:36.205 +02:00 [Information] Authorization failed.
+2019-05-01 19:40:36.209 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:40:36.214 +02:00 [Information] Executing ChallengeResult with authentication schemes (["Identity.Application", "Bearer"]).
+2019-05-01 19:40:36.218 +02:00 [Information] AuthenticationScheme: "Identity.Application" was challenged.
+2019-05-01 19:40:36.226 +02:00 [Information] AuthenticationScheme: "Bearer" was challenged.
+2019-05-01 19:40:36.230 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" in 72.9701ms
+2019-05-01 19:40:36.234 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:40:36.238 +02:00 [Information] Request finished in 97.9262ms 401 
+2019-05-01 19:41:18.365 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:41:18.740 +02:00 [Information] Executed DbCommand ("24"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:41:18.808 +02:00 [Information] Executed DbCommand ("12"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:41:18.819 +02:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:41:18.965 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:41:19.085 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:41:19.114 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:41:19.135 +02:00 [Information] Authorization failed.
+2019-05-01 19:41:19.143 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:41:19.153 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 19:41:19.164 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 19:41:19.172 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 49.9526ms
+2019-05-01 19:41:19.175 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:41:19.197 +02:00 [Information] Request finished in 234.124ms 302 
+2019-05-01 19:41:20.750 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:41:20.758 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:41:20.762 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:41:20.769 +02:00 [Information] Authorization failed.
+2019-05-01 19:41:20.773 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:41:20.777 +02:00 [Information] Executing ForbidResult with authentication schemes ([]).
+2019-05-01 19:41:20.780 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 19:41:20.784 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 18.3648ms
+2019-05-01 19:41:20.788 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:41:20.792 +02:00 [Information] Request finished in 42.4042ms 302 
+2019-05-01 19:41:20.803 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/AccessDenied?ReturnUrl=%2F  
+2019-05-01 19:41:20.842 +02:00 [Information] Request finished in 38.7409ms 404 
+2019-05-01 19:42:09.359 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:42:09.762 +02:00 [Information] Executed DbCommand ("36"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:42:09.824 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:42:09.839 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:42:09.943 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:42:10.057 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:42:10.072 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:42:10.090 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:42:10.098 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.6411ms.
+2019-05-01 19:42:10.127 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:42:10.337 +02:00 [Information] Executed ViewResult - view "Index" executed in 224.2478ms.
+2019-05-01 19:42:10.342 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 265.9655ms
+2019-05-01 19:42:10.346 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:42:10.363 +02:00 [Information] Request finished in 416.0728ms 200 text/html; charset=utf-8
+2019-05-01 19:42:12.757 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Logout  
+2019-05-01 19:42:12.776 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)"'
+2019-05-01 19:42:12.797 +02:00 [Information] Route matched with "{action = \"Logout\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)"
+2019-05-01 19:42:12.802 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)" - Validation state: Valid
+2019-05-01 19:42:12.817 +02:00 [Information] AuthenticationScheme: "Identity.Application" signed out.
+2019-05-01 19:42:12.822 +02:00 [Information] AuthenticationScheme: "Identity.External" signed out.
+2019-05-01 19:42:12.826 +02:00 [Information] AuthenticationScheme: "Identity.TwoFactorUserId" signed out.
+2019-05-01 19:42:12.831 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.RedirectToActionResult" in 24.9918ms.
+2019-05-01 19:42:12.841 +02:00 [Information] Executing RedirectResult, redirecting to "/".
+2019-05-01 19:42:12.846 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)" in 44.0996ms
+2019-05-01 19:42:12.850 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Logout (SneakersApp)"'
+2019-05-01 19:42:12.856 +02:00 [Information] Request finished in 99.0803ms 302 
+2019-05-01 19:42:12.867 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:42:12.872 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:42:12.877 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:42:12.881 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:42:12.885 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.0788ms.
+2019-05-01 19:42:12.890 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:42:12.907 +02:00 [Information] Executed ViewResult - view "Index" executed in 16.3439ms.
+2019-05-01 19:42:12.912 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 30.1445ms
+2019-05-01 19:42:12.916 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:42:12.921 +02:00 [Information] Request finished in 53.5338ms 200 text/html; charset=utf-8
+2019-05-01 19:42:14.854 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Account/Login  
+2019-05-01 19:42:14.862 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:42:14.869 +02:00 [Information] Route matched with "{action = \"Login\", controller = \"Account\"}". Executing action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"
+2019-05-01 19:42:14.874 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" - Validation state: Valid
+2019-05-01 19:42:14.879 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.3599ms.
+2019-05-01 19:42:14.887 +02:00 [Information] Executing ViewResult, running view "Login".
+2019-05-01 19:42:14.972 +02:00 [Information] Executed ViewResult - view "Login" executed in 82.4294ms.
+2019-05-01 19:42:14.983 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.unobtrusive.min.js  
+2019-05-01 19:42:14.985 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/jquery.validate.min.js  
+2019-05-01 19:42:14.989 +02:00 [Information] Executed action "SneakersApp.Controllers.API.AccountController.Login (SneakersApp)" in 103.9201ms
+2019-05-01 19:42:14.993 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.AccountController.Login (SneakersApp)"'
+2019-05-01 19:42:14.998 +02:00 [Information] Request finished in 144.4382ms 200 text/html; charset=utf-8
+2019-05-01 19:42:15.025 +02:00 [Information] Request finished in 49.0491ms 404 
+2019-05-01 19:42:15.033 +02:00 [Information] Request finished in 49.0384ms 404 
+2019-05-01 19:47:09.976 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:47:10.365 +02:00 [Information] Executed DbCommand ("25"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:47:10.427 +02:00 [Information] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:47:10.437 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:47:10.543 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:47:10.653 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:47:10.668 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:47:10.687 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:47:10.696 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.9264ms.
+2019-05-01 19:47:10.726 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:47:10.932 +02:00 [Information] Executed ViewResult - view "Index" executed in 221.0997ms.
+2019-05-01 19:47:10.938 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 264.9189ms
+2019-05-01 19:47:10.942 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:47:10.956 +02:00 [Information] Request finished in 409.3089ms 200 text/html; charset=utf-8
+2019-05-01 19:47:10.970 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 19:47:10.984 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.css  
+2019-05-01 19:47:11.000 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-05-01 19:47:11.003 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2019-05-01 19:47:11.004 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/jquery/dist/jquery.js  
+2019-05-01 19:47:11.023 +02:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.bundle.js" was not modified
+2019-05-01 19:47:11.025 +02:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2019-05-01 19:47:11.032 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 19:47:11.034 +02:00 [Information] The file "/js/site.js" was not modified
+2019-05-01 19:47:11.038 +02:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2019-05-01 19:47:11.057 +02:00 [Information] Request finished in 75.7891ms 304 text/css
+2019-05-01 19:47:11.057 +02:00 [Information] Request finished in 58.7152ms 304 application/javascript
+2019-05-01 19:47:11.068 +02:00 [Information] Request finished in 83.5475ms 304 text/css
+2019-05-01 19:47:11.077 +02:00 [Information] Request finished in 55.6638ms 304 application/javascript
+2019-05-01 19:47:11.082 +02:00 [Information] Request finished in 70.3541ms 304 application/javascript
+2019-05-01 19:47:20.761 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Create  
+2019-05-01 19:47:20.773 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:47:20.787 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"
+2019-05-01 19:47:20.847 +02:00 [Information] Authorization failed.
+2019-05-01 19:47:20.855 +02:00 [Information] Authorization failed for the request at filter '"Microsoft.AspNetCore.Mvc.Authorization.AuthorizeFilter"'.
+2019-05-01 19:47:20.865 +02:00 [Information] Executing ForbidResult with authentication schemes (["Identity.Application", "Bearer"]).
+2019-05-01 19:47:20.875 +02:00 [Information] AuthenticationScheme: "Identity.Application" was forbidden.
+2019-05-01 19:47:20.880 +02:00 [Information] AuthenticationScheme: "Bearer" was forbidden.
+2019-05-01 19:47:20.884 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" in 93.0261ms
+2019-05-01 19:47:20.888 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:47:20.893 +02:00 [Information] Request finished in 133.3827ms 403 
+2019-05-01 19:47:59.177 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:47:59.544 +02:00 [Information] Executed DbCommand ("35"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:47:59.608 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:47:59.623 +02:00 [Information] Executed DbCommand ("10"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:47:59.715 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:47:59.829 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:47:59.844 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:47:59.861 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:47:59.869 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.8612ms.
+2019-05-01 19:47:59.897 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:48:00.094 +02:00 [Information] Executed ViewResult - view "Index" executed in 210.3361ms.
+2019-05-01 19:48:00.099 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 251.3942ms
+2019-05-01 19:48:00.103 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:48:00.116 +02:00 [Information] Request finished in 396.9444ms 200 text/html; charset=utf-8
+2019-05-01 19:48:06.246 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/Shoe/Create  
+2019-05-01 19:48:06.268 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:48:06.281 +02:00 [Information] Route matched with "{action = \"Create\", controller = \"Shoe\"}". Executing action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"
+2019-05-01 19:48:06.345 +02:00 [Information] Authorization was successful.
+2019-05-01 19:48:06.350 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" - Validation state: Valid
+2019-05-01 19:48:06.356 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:48:06.362 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 8.0743ms.
+2019-05-01 19:48:06.371 +02:00 [Information] Executing ViewResult, running view "Create".
+2019-05-01 19:48:06.406 +02:00 [Information] Executed DbCommand ("11"ms) [Parameters=["@__id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [collection].[Id], [collection].[Created], [collection].[Description], [collection].[Title], [collection].[UserId]
+FROM [Collections] AS [collection]
+WHERE [collection].[UserId] = @__id_0"
+2019-05-01 19:48:06.424 +02:00 [Information] Executed ViewResult - view "Create" executed in 55.6846ms.
+2019-05-01 19:48:06.429 +02:00 [Information] Executed action "SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)" in 143.5144ms
+2019-05-01 19:48:06.433 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.ShoeController.Create (SneakersApp)"'
+2019-05-01 19:48:06.439 +02:00 [Information] Request finished in 191.5183ms 200 text/html; charset=utf-8
+2019-05-01 19:55:02.475 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:55:02.849 +02:00 [Information] Executed DbCommand ("37"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:55:02.905 +02:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:55:02.928 +02:00 [Information] Executed DbCommand ("18"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [r].[Id], [r].[ConcurrencyStamp], [r].[Name], [r].[NormalizedName]
+FROM [AspNetRoles] AS [r]
+WHERE [r].[NormalizedName] = @__normalizedName_0"
+2019-05-01 19:55:03.030 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/  
+2019-05-01 19:55:03.107 +02:00 [Information] Entity Framework Core "2.2.4-servicing-10062" initialized '"SneakersAppDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "MigrationsAssembly=SneakersApp "
+2019-05-01 19:55:03.138 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__get_Item_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AccessFailedCount], [e].[ConcurrencyStamp], [e].[Email], [e].[EmailConfirmed], [e].[Firstname], [e].[Lastname], [e].[LockoutEnabled], [e].[LockoutEnd], [e].[NormalizedEmail], [e].[NormalizedUserName], [e].[PasswordHash], [e].[PhoneNumber], [e].[PhoneNumberConfirmed], [e].[SecurityStamp], [e].[TwoFactorEnabled], [e].[UserName]
+FROM [AspNetUsers] AS [e]
+WHERE [e].[Id] = @__get_Item_0"
+2019-05-01 19:55:03.239 +02:00 [Information] Executed DbCommand ("3"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [uc].[Id], [uc].[ClaimType], [uc].[ClaimValue], [uc].[UserId]
+FROM [AspNetUserClaims] AS [uc]
+WHERE [uc].[UserId] = @__user_Id_0"
+2019-05-01 19:55:03.290 +02:00 [Information] Executed DbCommand ("4"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [role].[Name]
+FROM [AspNetUserRoles] AS [userRole]
+INNER JOIN [AspNetRoles] AS [role] ON [userRole].[RoleId] = [role].[Id]
+WHERE [userRole].[UserId] = @__userId_0"
+2019-05-01 19:55:03.351 +02:00 [Information] Executing endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:55:03.366 +02:00 [Information] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"
+2019-05-01 19:55:03.384 +02:00 [Information] Executing action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" - Validation state: Valid
+2019-05-01 19:55:03.393 +02:00 [Information] Executed action method "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)", returned result "Microsoft.AspNetCore.Mvc.ViewResult" in 0.7797ms.
+2019-05-01 19:55:03.428 +02:00 [Information] Executing ViewResult, running view "Index".
+2019-05-01 19:55:03.645 +02:00 [Information] Executed ViewResult - view "Index" executed in 236.2617ms.
+2019-05-01 19:55:03.650 +02:00 [Information] Executed action "SneakersApp.Controllers.API.HomeController.Index (SneakersApp)" in 279.5521ms
+2019-05-01 19:55:03.654 +02:00 [Information] Executed endpoint '"SneakersApp.Controllers.API.HomeController.Index (SneakersApp)"'
+2019-05-01 19:55:03.695 +02:00 [Information] Request finished in 642.7996ms 200 text/html; charset=utf-8
+2019-05-01 19:55:03.708 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/js/bootstrap.bundle.js  
+2019-05-01 19:55:03.711 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/bootstrap/dist/css/bootstrap.css  
+2019-05-01 19:55:03.717 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/css/site.css  
+2019-05-01 19:55:03.721 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/js/site.js?v=4q1jwFhaPaZgr8WAUSrux6hAuh0XDg9kPS3xIVq36I0  
+2019-05-01 19:55:03.734 +02:00 [Information] Request starting HTTP/2.0 GET https://localhost:44321/lib/jquery/dist/jquery.js  
+2019-05-01 19:55:03.747 +02:00 [Information] The file "/lib/bootstrap/dist/css/bootstrap.css" was not modified
+2019-05-01 19:55:03.749 +02:00 [Information] The file "/lib/bootstrap/dist/js/bootstrap.bundle.js" was not modified
+2019-05-01 19:55:03.751 +02:00 [Information] The file "/css/site.css" was not modified
+2019-05-01 19:55:03.757 +02:00 [Information] The file "/js/site.js" was not modified
+2019-05-01 19:55:03.759 +02:00 [Information] The file "/lib/jquery/dist/jquery.js" was not modified
+2019-05-01 19:55:03.771 +02:00 [Information] Request finished in 68.8364ms 304 text/css
+2019-05-01 19:55:03.773 +02:00 [Information] Request finished in 88.1325ms 304 application/javascript
+2019-05-01 19:55:03.777 +02:00 [Information] Request finished in 60.1367ms 304 application/javascript
+2019-05-01 19:55:03.781 +02:00 [Information] Request finished in 60.1759ms 304 text/css
+2019-05-01 19:55:03.785 +02:00 [Information] Request finished in 76.3555ms 304 application/javascript

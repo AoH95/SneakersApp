@@ -11,9 +11,8 @@
 using System;
 using System.Reflection;
 
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("SneakersApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "\\\\Mac\\Home\\Documents\\DOTNET\\lastClone\\SneakersApp\\SneakersApp\\SneakersApp", "SneakersApp.csproj", "0")]
-[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("SneakersApp.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "\\\\Mac\\Home\\Documents\\DOTNET\\lastClone\\SneakersApp\\SneakersApp\\SneakersApp.Service" +
-    "s", "SneakersApp.Services.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("SneakersApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\SneakersApp\\SneakersApp\\SneakersApp", "SneakersApp.csproj", "0")]
+[assembly: Microsoft.AspNetCore.Mvc.Testing.WebApplicationFactoryContentRootAttribute("SneakersApp.Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null", "C:\\SneakersApp\\SneakersApp\\SneakersApp.Services", "SneakersApp.Services.csproj", "0")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("SneakersApp.xUnit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]

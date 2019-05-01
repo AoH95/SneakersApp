@@ -26,6 +26,9 @@ using Serilog;
 using Serilog.Sinks.RollingFile;
 using Serilog.Events;
 using SneakersApp.Class.Validator;
+using SneakersApp.Requirements;
+using Microsoft.AspNetCore.Authorization;
+using SneakersApp.Handlers;
 
 namespace SneakersApp
 {
@@ -113,6 +116,16 @@ namespace SneakersApp
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
 
+            services.AddAuthorization(
+                options =>
+                {
+                    options.AddPolicy("at least 2000", policy => policy.Requirements.Add(new MinDateBirthRequirement(2000)));
+
+                }
+            );
+
+            services.AddSingleton<IAuthorizationHandler, MinDateBirthHandlers>();
+
             services.AddSwaggerGen(cfg =>
             {
                 cfg.SwaggerDoc("v1", new Info { Title = "MON API SOLIDE", Description = "C'est sympa les docs comme ça pour les frontend." });
@@ -133,7 +146,7 @@ namespace SneakersApp
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, RoleManager<IdentityRole> roleManager)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -150,6 +163,13 @@ namespace SneakersApp
                 app.UseHsts();
             }
 
+            app.UseStatusCodePages(async context => {
+                if (context.HttpContext.Response.StatusCode == 403)
+                {
+                   
+                }
+            });
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
@@ -159,19 +179,43 @@ namespace SneakersApp
             app.UseMvc(ConfigureRoute);
             app.UseSwagger();
             app.UseSwaggerUI(cfg => cfg.SwaggerEndpoint("/swagger/v1/swagger.json", "Core API"));
+
+            CreateRoles(roleManager);
         }
 
         private void ConfigureRoute(IRouteBuilder routeBuilder)
         {
 
             //routeBuilder.MapRoute(
-              //  name: "areas",
-               // template: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
+            //  name: "areas",
+            // template: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
 
             routeBuilder.MapRoute(
                 name: "Default",
                 template: "{controller}/{action}/{id?}",
                 defaults: new { controller = "Home", action = "Index" });
         }
+
+        private void CreateRoles(RoleManager<IdentityRole> roleManager)
+        {
+
+            var roles = Role.Roles;
+
+            foreach (var roleName in roles)
+            {
+                var roleExists = roleManager.RoleExistsAsync(roleName)
+                    .GetAwaiter()
+                    .GetResult();
+
+                if (!roleExists)
+                {
+                    roleManager.CreateAsync(new IdentityRole { Name = roleName })
+                        .GetAwaiter()
+                        .GetResult();
+                }
+            }
+        }
+
+
     }
 }

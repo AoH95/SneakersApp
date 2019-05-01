@@ -15010,23 +15010,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jawed\\.nuget\\packages\\": {},
+    "C:\\Users\\Valen\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "\\\\Mac\\Home\\Documents\\DOTNET\\lastClone\\SneakersApp\\SneakersApp\\SneakersApp.xUnit\\SneakersApp.xUnit.csproj",
+      "projectUniqueName": "C:\\SneakersApp\\SneakersApp\\SneakersApp.xUnit\\SneakersApp.xUnit.csproj",
       "projectName": "SneakersApp.xUnit",
-      "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\lastClone\\SneakersApp\\SneakersApp\\SneakersApp.xUnit\\SneakersApp.xUnit.csproj",
-      "packagesPath": "C:\\Users\\Jawed\\.nuget\\packages\\",
-      "outputPath": "\\\\Mac\\Home\\Documents\\DOTNET\\lastClone\\SneakersApp\\SneakersApp\\SneakersApp.xUnit\\obj\\",
+      "projectPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp.xUnit\\SneakersApp.xUnit.csproj",
+      "packagesPath": "C:\\Users\\Valen\\.nuget\\packages\\",
+      "outputPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp.xUnit\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jawed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Valen\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -15039,8 +15039,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "\\\\Mac\\Home\\Documents\\DOTNET\\lastClone\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj": {
-              "projectPath": "\\\\Mac\\Home\\Documents\\DOTNET\\lastClone\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj"
+            "C:\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj": {
+              "projectPath": "C:\\SneakersApp\\SneakersApp\\SneakersApp\\SneakersApp.csproj"
             }
           }
         }
